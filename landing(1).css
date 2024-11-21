@@ -1,0 +1,739 @@
+*{
+    margin: 0;
+    padding: 0;
+}  
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Epilogue:wght@800&family=Montserrat+Alternates:wght@600&family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&family=Open+Sans:wght@500;600&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.bfoot{
+    width: 100%;
+    height: fit-content;
+    background-size: 1600px 1000px;
+    display: flex;
+    justify-content: start;
+    background-repeat: no-repeat;
+    background-image: url(enterprise-upsell-v5-desktop.webp);
+    color: white;
+    background-color: rgb(18,21,27);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mko, .nko{
+    width: 90%;
+    height: 110vh;
+    background-position: center;
+    background-size: 1900px 800px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+    background-image: url(enterprise-upsell-v5-desktop.webp);
+}
+.nko{
+    height: fit-content;
+}
+.poy{
+    width: 48%;
+}
+.poy h1{
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.gh{
+    color: rgb(230,2,120);
+}
+.oy{
+    width: 45.5%;
+}
+.xr{
+    display: flex;
+    align-items: center;
+}
+
+
+.oy h4{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(230,2,120);
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 70px;
+}
+.oy p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    line-height: 20px;
+}
+.oy a{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.oy a:hover{
+    text-decoration: underline;
+    color: cyan;
+}
+.fl{
+    display: flex;
+    align-items: center;
+}
+.ff{
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.pupu, .upu{
+    margin-left: 20px;
+}
+.popo{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.popo img{
+    width: 100%;
+}
+.nko{
+    display: none;
+}
+
+.boy{
+    width: 100%;
+}
+.boy h1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.gg{
+    color: rgb(230,2,120);
+}
+.coy{
+    width: 100%;
+    margin-top: 40px;
+}
+.xr{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+.coy h4{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(230,2,120);
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 70px;
+}
+.coy p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    line-height: 20px;
+}
+.coy a{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.coy a:hover{
+    text-decoration: underline;
+    color: cyan;
+}
+
+
+
+
+
+
+/* mediaquery */
+@media (max-width : 1115px){
+.mko{
+    width: 100%;
+}
+.pupu{
+    margin-left: 90px;
+}
+.poy{
+    width: 35%;
+}
+.oy{
+    width: 44.5%;
+}
+    
+}
+@media (max-width : 959px){
+.mko{
+    width: 100%;
+    height: fit-content;
+}
+.pupu{
+    margin: 60px 0px 60px 90px;
+}
+.poy{
+    width: 60%;
+}
+.oy{
+    width: 55%;
+}
+    
+}
+@media (max-width : 767px){
+.mko{
+   display: none;
+}
+.nko{
+   display: block;
+}
+.nko{
+    width: 100%;
+}
+.upu{
+    margin: 10px 0px 150px 20px;
+}
+
+.popo{
+    width: 100%;
+    background-image: none;
+    background-color: rgb(18,21,27);
+}
+
+    
+}
+
+
+
+        .footer{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(18,21,27);
+            
+        }
+        section{
+            display: flex;
+            height: fit-content;
+            justify-content: center;
+        }
+        .mom img{
+            margin-bottom: 20px;
+        }
+        .mom a{
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        .mom a:hover{
+            text-decoration: underline;
+        }
+        .mom img{
+            width: 150px;
+        }
+        .kal{
+            margin-top: 40px;
+            width: 85%;
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+           
+        }
+        .ter p{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: white;
+        }
+        .ter a{
+            font-family: 'Roboto', sans-serif;
+           text-decoration: none;
+           line-height: 25px;
+           color: white;
+           font-size: 14px;
+        }
+        .ter a:hover{
+            text-decoration: underline;
+        }
+        .klo h1{
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+        .bus{
+            width: 150px;
+            height: 40px;
+            background-color: rgb(18,21,27);
+            border: 1.5px solid white;
+            border-radius: 6px;
+            margin-top: 15px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bus h6{
+            font-weight: 400;
+            font-size: 8px;
+        }
+        .bus p{
+            margin-right: 15px;
+        }
+        .bus img{
+            width: 50px;
+        }
+        .icons{
+            width: 170px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .line{
+            width: 90%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.15);
+            margin-top: 60px;
+        }
+        .mine{
+            width: 100%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.15);
+            margin: 5px 0px;
+            display: none;
+        }
+        .sine{
+            width: 100%;
+            height: 1px;
+            display: none;
+            background-color: rgba(255, 255, 255, 0.15);
+           margin: 15px 0px 20px 0px; 
+        }
+        .geng{
+            width: 80%;
+            
+            display: flex;
+            /* background-color: aqua; */
+            justify-content: space-between;
+            color: white;
+            margin: 25px 0px 0px 90px;
+        }
+        .tep h1{
+            font-size: 17px;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+        }
+        .tep p{
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .pet p{
+            font-size: 11px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+        }
+        .kia{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .kia a{
+            margin-left: 10px;
+        }
+        .rr:hover{
+            color: blue;
+        }
+        .net p{
+            font-size: 15px;
+        }
+
+
+        
+        /* media query footer */
+        @media (max-width : 1115px){
+          .kal{
+            width: 100%;
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+          .line{
+            width: 100%;
+          }
+          .geng{
+            width: 95%;
+            margin-left: 10px;
+            margin-bottom: 50px;
+          }
+          .mine, .sine{
+            display: none;
+          }
+        }
+
+           @media (max-width : 959px){
+            .footer{
+                width: 100%;
+                height: fit-content;
+            }
+            .kal{
+                flex-wrap: wrap;
+                height: fit-content;
+                margin-left: 15px;
+            }
+            .mom{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .geng{
+                width: 60%;
+                flex-wrap: wrap;
+                height: fit-content;
+                margin-bottom: 50px;
+            }
+            .pet{
+                width: 80%;
+                margin-top: 30px;
+                line-height: 20px;
+            }
+            .mine, .sine{
+                display: none;
+            }
+            
+        }
+
+        @media (max-width : 896px){
+            .footer{
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+            }
+            .kal{
+                width: 95%;
+            }
+            .mom{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .geng{
+                width: 65%;
+                flex-wrap: wrap;
+                height: fit-content;
+                margin-bottom: 50px;
+            }
+            .pet{
+                width: 75%;
+                margin-top: 30px;
+                line-height: 20px;
+            }
+            .mine, .sine{
+                display: none;
+            }
+        }
+
+        @media (max-width : 807px){
+            .footer{
+                width: 100%;
+                height: fit-content;
+            }
+            .kal{
+                width: 100%;
+                flex-wrap: wrap;
+                height: fit-content;
+            }
+            .mom{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .ter{
+                width: 18%;
+                /* margin-bottom: 20px; */
+            }
+            .ter a{
+                font-size: 15px;
+            }
+            .geng{
+                width: 70%;
+                flex-wrap: wrap;
+                height: fit-content;
+                margin-bottom: 50px;
+            }
+            .pet{
+                width: 65%;
+                margin-top: 30px;
+                line-height: 20px;
+            }
+            .mine, .sine{
+                display: none;
+            }
+            
+        }
+
+        @media (max-width : 767px){
+            .footer{
+                width: 100%;
+                height: fit-content;
+            }
+            .kal{
+                width: 100%;
+                height: fit-content;
+                flex-wrap: wrap;
+                height: fit-content;
+                /* margin-right: 50px; */
+            }
+            .kia{
+                width: 100%;
+                margin-top: 10px;
+            }
+            .klo{
+                width: 100%;
+            }
+            .mom{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .ter{
+                width: 100%;
+            }
+            .ter a{
+                font-size: 15px;
+            }
+           
+            .geng{
+                width: 70%;
+                margin-top: -4px;
+                flex-wrap: wrap;
+                height: fit-content;
+                margin-bottom: 50px;
+            }
+            .pet{
+                width: 100%;
+            }
+            .mine, .sine{
+                display: block;
+                width: 100%;
+            }
+            
+            .tep{
+                margin: 0;
+                display: none;
+            }
+            .love{
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .icons{
+                width: 80%;
+                margin-top: 30px;
+            }
+            
+        }
+
+        
+        @media (max-width : 570px){
+            .footer{
+                width: 100%;
+                height: fit-content;
+            }
+            .kal{
+                width: 100%;
+                flex-wrap: wrap;
+                height: fit-content;
+                /* margin-right: 50px; */
+            }
+            .kia{
+                width: 100%;
+                margin-top: 10px;
+            }
+            .klo{
+                width: 100%;
+            }
+            .mom{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .ter{
+                width: 100%;
+            }
+            .ter a{
+                font-size: 15px;
+            }
+          
+            .geng{
+                width: 90%;
+                margin-top: -4px;
+                flex-wrap: wrap;
+                height: fit-content;
+            }
+            .pet{
+                font-size: 10px;
+            }
+            .mine, .sine{
+                display: block;
+                width: 100%;
+            }
+            
+            .tep{
+                margin: 0;
+                display: none;
+            }
+            .love{
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .icons{
+                width: 85%;
+                margin-top: 30px;
+            }
+            
+        }
+        @media (max-width : 496px){
+            .footer{
+                width: 100%;
+                height: fit-content;
+            }
+            .kal{
+                width: 100%;
+                flex-wrap: wrap;
+                height: fit-content;
+            }
+
+            .kia{
+                width: 100%;
+                margin-top: 10px;
+            }
+            .klo{
+                width: 100%;
+            }
+            .mom{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .ter{
+                width: 100%;
+            }
+            .ter a{
+                font-size: 15px;
+            }
+          
+            .geng{
+                width: 95%;
+                margin-top: -4px;
+                flex-wrap: wrap;
+                height: fit-content;
+                font-size: 10px;
+                margin-bottom: 50px;
+            }
+            .pet p{
+                font-size: 10px;
+            }
+            .mine, .sine{
+                display: block;
+                width: 100%;
+            }
+            
+            .tep{
+                margin: 0;
+                display: none;
+            }
+            .love{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .icons{
+                width: 100%;
+                margin-top: 30px;
+            }
+            section{
+                width: 100%;
+            }
+        }
+        
+
+        @media (max-width : 361px){
+            .footer{
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+            }
+            .kal{
+                width: 100%;
+                flex-wrap: wrap;
+                height: fit-content;
+            }
+     
+            .kia{
+                width: 90%;
+                margin-top: 10px;
+            }
+            .klo{
+                width: 100%;
+            }
+            .mom{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .ter{
+                width: 100%;
+            }
+            .ter a{
+                font-size: 15px;
+            }
+          
+            .geng{
+                width: 95%;
+                margin-top: -4px;
+                flex-wrap: wrap;
+                height: fit-content;
+                font-size: 10px;
+                margin-bottom: 50px;
+            }
+            .pet p{
+                font-size: 10px;
+            }
+            .mine, .sine{
+                display: block;
+                width: 100%;
+            }
+            
+            .tep{
+                
+                margin: 0;
+                display: none;
+            }
+            .love{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .icons{
+                width: 100%;
+                margin-top: 30px;
+            }
+            section{
+                width: 100%;
+            }
+        }
+        

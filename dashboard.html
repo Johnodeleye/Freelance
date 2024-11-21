@@ -1,0 +1,2840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #navbar{
+            width: 100%;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.294);
+            position: absolute;
+        }
+
+        #onebar img{
+            width: 150px;
+            height: 40px;
+        }
+
+
+        #onebar{
+            display: flex;
+            align-items: center;
+        }
+
+        #onebar p{
+            display: none;
+           
+        }
+
+        #hold{
+        
+            width: 80%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #twobar{
+            width: 25%;
+          display: flex;
+         
+          align-items: center;
+          justify-content: space-between;
+          height: 100%;
+          margin-right: 150px;
+        }
+
+        #threebar{
+            width: 37%;
+          display: flex;
+    
+          align-items: center;
+          justify-content: space-between;  
+          height: 100%;
+          margin-right: 50px;
+        }
+#twobar img{
+       width: 22px;
+       height: 22px;
+       margin: 5px;
+}
+.way{
+    display: none;
+}
+
+#twobar p{ 
+    display: flex;
+ align-items: center;
+
+}
+        #twobar #p {
+             display: flex;
+             align-items: center;
+             height: 100%;
+        }
+
+        #twobar #p:hover{
+            background-color: whitesmoke;
+        }
+
+
+        
+
+        #threebar span {
+            font-weight: 600;
+            color: white;
+          width: fit-content;
+          padding: 10px 20px;
+          border-radius: 5px;
+          background-color: rgb(230,5,120);
+          
+
+        }
+
+        #threebar p img {
+         margin-right: 5px;
+            width: 32px;
+            height: 32px;
+            border-radius: 5px;
+        }
+
+        #threebar p{
+            position: relative;
+            display: flex;
+          align-items: center;
+        }
+
+        #threebar p b{
+            margin-bottom: 20px;
+        }
+        
+        #threebar p legend{
+         position: absolute;
+         font-size: 14px;
+         bottom: 2px;
+         right: 25px;
+        }
+
+        #threebar #way{
+            width: 24px;
+            height: 24px;
+        }
+
+        #drop , #parent , #smooth , #papa , #chat , #cee{
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+       
+
+        #con , #cont{
+            position: absolute;
+            display: none;
+            top: 40px;
+            width: 920px;
+            height: 580px;
+            margin-top: 5px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.112);
+          
+        }
+
+   #drop:hover #con{
+    display: block;
+   }
+
+        #cont , #conti{
+            width: 100%;
+            height: 100%; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: none;
+            top: 0;
+            background-color: white;
+        }
+        
+        #conti , #lay{
+            width: 95%;
+            height: 95%; 
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+
+        #lay {
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            height: 15%;
+            width: 100%;
+     
+        }
+
+      #lay p,   #lay input{
+            width: 100%;
+            height: 50%;
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+
+        #lay input{
+            margin: auto;
+            width: 90%;
+            height: 90%;
+            padding-left: 15px;
+            font-size: 16px;
+            outline: none;
+            border: none;
+        }
+
+ #lay p , #iwonder p{
+    background-image: url('search.png');
+   background-repeat: no-repeat;
+   background-position: 8px ;
+   background-size: 25px;
+        }
+
+        #iwonder p{
+            background-size: 18px;
+            background-position: 5px;
+        }
+
+
+        #relay{
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 10px;
+            width: 99%;
+            height: 20%;
+        }
+        #in{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 80%;
+        }
+
+        #in div{
+            display: flex;
+            align-items: start;
+            width: 24%;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        #in div span {
+            font-size: 15px;
+            margin-left: 30px;
+        }
+
+        #in b{
+            font-size: 17px;
+        }
+    
+  #parent:hover #son{
+    display: block;
+  }
+
+   #son , #sonn{
+    position: absolute;
+    display: none;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    top: 45.7px;
+    left: -150px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.112);
+   }
+
+ 
+/*  
+   #way:hover {
+   
+    background-color: rgb(218, 218, 218);
+   } */
+
+
+
+   #sonn{
+    top: 0;
+    left: 0;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       box-shadow: none;
+     
+   }
+
+   #thesun{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 95%;
+   }
+
+   #thesun span{
+    color: #1871eb;
+   }
+
+   #sow , #soww , #sowl{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 23%;
+   }
+
+   #sowl{
+    margin-top: 0;
+    height: 15%;
+   }
+
+   #soww{
+    margin-top: 0;
+    height: 45%;
+   }
+
+   #sow p , #soww p , #sowl p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+
+   #soww div  {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 70%;
+    justify-content: space-between;
+   }
+
+   #soww div p{
+    font-size: 15px;
+    width: 50%;
+   }
+
+   #soww div p text , #readdy p text{
+    margin-left: 10px;
+    width: 90%;
+   }
+
+   #sow div{
+  display: flex;
+  justify-content: center;
+    text-align: center;
+   }
+
+   #sow div p{
+    display: inline;
+   }
+
+   #sow div a{
+    color: #1871eb;
+    text-decoration: none;
+   
+   }
+
+   #smh , #shh{
+border-radius: 5px;
+    position: absolute;
+    display: none;
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    top: 46.5px;
+    left: -150px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.112);
+
+   }
+
+   #smooth:hover #smh{
+    display: block;
+   }
+
+   #rondo a:hover{
+    background-color: whitesmoke;
+}
+
+   #shh{
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   #sha{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+   
+   #sha div , #dropp div{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+   }
+
+   #dropp div{
+    margin-top: 150px;
+    width: 70%;
+    margin: auto;
+    margin-top: 130px;
+   }
+
+   #sha div img , #dropp div img{
+    width: 64px;
+    height: 64px;
+   }
+
+   .btn{
+    font-size: 15px;
+   }
+        
+
+   .accordion-container {
+    background-color: white;
+    position: fixed;
+    bottom: -15px;
+    right: 0;
+            display: flex;
+            flex-direction: column;
+            width: 350px; 
+        }
+
+        .accordion-section {
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            background-color: #13151b;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .accordion-header div , .accordion-header div p{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+         
+        }
+
+        .accordion-header div p{
+            width: 22%;
+        }
+
+        .accordion-header div p #imgg  {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            padding: 5px;
+        }
+
+        #butt{
+            border: none;
+            background-color: rgba(250, 235, 215, 0);
+            border-radius: 48%;
+            padding: 4px 5px;
+
+        }
+
+        #butt:hover ,  .accordion-header div p #imgg:hover{
+            background-color: rgba(255, 255, 255, 0.457);
+        }
+
+
+        .accordion-content {
+            padding: 10px;
+            display: none;
+            height: 400px;
+        }
+
+        .accordion-content.active {
+            display: block;
+        }
+
+
+        #papa{
+            position: relative;
+        }
+
+       
+
+
+        #pikin , #pic{
+            display: none;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.112);
+            position: absolute;
+            width: 400px;
+            height: 550px; 
+            top: 45px;
+           left: -150px;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        #pic{
+            top:0;
+            left: 0;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            box-shadow: none;
+            
+        }
+        #papa:hover #pikin{
+            display: block;
+        }
+
+        #rand {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            align-items: center;
+          
+        }
+
+        #ree{
+            width: 160px;
+            height: 100%;
+            border: none;
+            background-color: rgba(255, 255, 255, 0);
+            font-size: 16px;
+        }
+
+        #ree:hover{
+            border-bottom: 3px solid rgba(67, 67, 67, 0.471);
+        }
+
+        #ree:focus-within {
+            font-weight: 600;
+            color: #1871eb;
+            border-bottom: 3px solid rgb(24,113,235);
+         
+        }
+
+        #free{
+            width: 70px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background-color: rgba(255, 255, 255, 0);
+        }
+
+
+        #rondo{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: center; 
+            height: 85%;
+            width: 100%;
+            overflow-y: scroll;
+          
+        }
+
+        #quondo{
+            margin-top: 24px;
+            padding-top: 10px;
+           padding-bottom: 10px;
+            height: 20%;
+        
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+           
+            
+        }
+
+        #quondo:hover {
+            background-color: whitesmoke;
+        }
+        #quondo  img{
+            display: inline-block;
+           padding-left: 50px;
+        }
+
+        #quondo div {
+        
+            display: flex;
+       flex-direction: column;
+       align-items: start;
+       justify-content: space-between;
+       width: 87%;
+       height: 105%;
+     
+       font-size: 15px;
+     
+        }
+
+        #quondo div #sabi{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        #dropdownnn{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        #dripp{
+            display: none;
+            width: 400px;
+            height: 500px;
+            border-radius: 0 0 5px 5px;
+            background-color: white;
+            position: absolute;
+          top: 55px;
+          right: -80px;
+          z-index: 2;
+        }
+
+        #way{
+    padding: 10px 0;
+  }
+ 
+#way:hover {
+background-color: rgba(218, 218, 218, 0.351);
+}
+
+
+        .btn{
+            padding: 5px 10px;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        #dropdownnn:focus-within #dripp{
+            display: block;
+        }
+
+        #chat{
+            position: relative;
+        }
+
+        #bub , #bubble{
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.112);
+            width: 400px;
+            height: 250px;
+          left: -150px;
+          top: 46.3px;
+        }
+
+        #bubble{
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            /* justify-content: space-between; */
+            flex-direction: column;
+            box-shadow: none;
+        }
+
+        #bubble #ppa {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            height: 25%;
+            margin-top: 20px; 
+        }
+       
+
+        #bubble div {
+            display: flex;
+            width: 90%; 
+            height: 60%;
+            align-items: center;
+            flex-direction: column;
+        }
+#bubble div p{
+    display: inline;
+    text-align: center;
+
+}
+
+#bubble text {
+    color: #1871eb;
+}
+
+#bubble #work{
+    margin-bottom: 13px;
+}
+
+#chat:hover #bub {
+    display: block;
+}
+
+#setting{
+    position: relative;
+}
+#set ,#setup{
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    border-radius: 0 0 5px 5px;
+    background-color: white;
+    top: -15px;
+    right: -20px;
+    z-index: 2;      
+    display: none;   
+}
+
+#setup{
+    top: 0;
+          right: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          overflow-y: scroll; 
+          position: static;   
+}
+
+#letgo{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: absolute;
+    z-index: 4;
+    background-color: white;
+}
+
+#letgo #pree {
+    width: 60%;
+    height: 100%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pree b{
+    margin-top: 20px;
+}
+#ready{
+ margin-top: 60px;
+ 
+}
+#ready , #notred , #readdy{
+    padding-top: 10px;
+ padding-bottom: 10px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+#notred{
+    height: 100%;
+    font-size: 15px;
+}
+
+#ready #you , #readdy #you{
+    margin-top:10px ;
+    width: 40%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#readdy #you{
+    margin-top: 20px;
+    width: 47%;
+    justify-content: space-between;
+    text-align: left;
+}
+
+#notred div{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+#notred div p{
+    margin-bottom: 10px;
+    width:100%;
+
+}
+#notred div img{
+    width: 64px;
+    height: 64px;
+}
+
+#readdy{
+    height: 800px;
+}
+
+#setting:focus-within #set{
+    display: block;
+}
+
+
+#pro{
+    position: relative;
+}
+#prof, #profi{
+    display: none;
+    position: absolute;
+width: 350px;
+height: 630px;
+top: 41.5px;
+left: -60px;
+background-color: white;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.112);
+}
+
+#profi{
+    display: flex;
+ justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+#profil{
+    width: 90%;
+    height: 95%;
+    display:flex ;
+flex-direction: column;
+align-items: center;
+}
+
+#profil1 , #profil2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* justify-content: space-around; */
+    line-height: 34px;
+    height: 40%;
+    width: 100%;
+}
+
+#profil2{
+    height: 60%;
+}
+
+#pass{
+    padding-right: 40px;
+    width: 87%;
+    font-size: 14px;
+}
+
+#profil b{
+    margin-bottom: 8px;
+}
+
+#profil2 #ball{
+    margin-bottom: 10px;
+}
+
+#profil2 #tome {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+#profil text{
+    font-size: 15px;
+}
+#profil text:hover  {
+    color: #1871eb;
+}
+
+#pro:hover #prof{
+    display: block;
+}
+
+#wonder {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+#iwonder{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    height: 15%;
+}
+
+#iwonder p , #iwonder input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ width: 85%;
+ height: 40px;
+ border-radius: 5px;
+border: 1px solid grey;
+}
+
+#iwonder input{
+    width: 80%;
+    display: block;
+    border: none;
+    outline: none;
+}
+
+#iwonder #iconn{
+    width: 16%;
+    height: 45px;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+#wonn{
+    display: flex;
+    align-items: start;
+    font-size: 16px;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+}
+
+#wonn p{
+    color: #1871eb;
+}
+#again{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+}
+#again text{
+    color: #1871eb;
+}
+
+
+#again b{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#blac{
+width: 100%;
+height: 100px;
+background-color: rgb(19,21,27);
+display: flex;
+align-items: end;
+justify-content: center;
+}
+
+#black{
+width: 80%;
+height: 50%;
+display: flex;
+align-items: center;
+justify-content: start;
+}
+
+#bones{
+width: 650px;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+#bones p ,#bones #sp{
+width: 120px;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0px 3px;
+
+}
+
+
+
+#bones #sp:hover{
+background-color: rgba(255, 255, 255, 0.201);
+
+}
+
+#bones  p {
+color: white;
+font-size: 15px;
+}
+
+#bones #prove{
+border-bottom: 5px solid white;
+
+}
+#bones #prove b{
+margin-top: 5px;
+}
+
+#sp text{
+    display: flex;
+    align-items: center;
+}
+
+#wiz{
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 200px;
+}
+
+#is{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+justify-content: space-between;
+    width: 80%;
+    height: fit-content ;
+}
+
+#king{
+    font-size: 15px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-top: 20px;
+    width:66%;
+    height: 200px;
+    background-color: #eaf2fd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.113);
+}
+#kin{
+    margin-top: 20px;
+}
+#kin , #kingg{
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    height: 580px;
+}
+#kingg{
+    width: 90%;
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+#kingg p , #kingg #cdf{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+#kingg #line{
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+}
+
+#kingg div{
+    width: 100%;
+    height: 70px;
+    border: 1px solid #e6007a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ #kingg #cdf{
+    width: 90%;
+}
+
+#kingg #cdf legend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#kingg #cdf legend iconify-icon{
+    margin-right: 4px;
+}
+
+progress{
+    width: 100%;
+    height: 10px;
+    background-color:#bcc6d3;
+    border-radius: 50px;
+     
+}
+
+#kingg button , #kingg #secbut{
+    font-size: 15px;
+    padding: 3px 5px ;
+}
+
+#kingg #secbut{
+border: none;
+background-color: #62626200;
+}
+#kingg #secbut:hover{
+text-decoration: underline;
+}
+
+progress::-webkit-progress-value {
+   
+    width: 44%;
+  }
+
+  progress::-webkit-progress-bar {
+    background-color: #376cb2 ;
+    border-radius: 50px;
+    width: 56%;
+  }
+
+  #textme b {
+    color: #e6007a;
+  }
+
+  #textme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #textme iconify-icon{
+    margin-right: 4px;
+  }
+
+  #kingg #inn {
+    width: 22%;
+  }
+
+  #kingg #fnt{
+    width: 65%;
+  }
+  #inn span {
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+
+  #startup {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: 10px;
+  margin-left: 20px;
+  }
+
+  #startup img {
+     margin-right: 20px;
+     display: flex;
+  }
+
+  #startup div{
+    width: 90%;
+  }
+
+#startup legend{
+ display: flex;
+ width: 50px;
+ align-items: center;
+ justify-content: end;
+ margin-right: 20px;
+}
+
+#startup #gta{
+    margin-right: 0;
+}
+
+#startup b{
+    color: #1871eb;
+}
+
+#startup #gt{
+    visibility: hidden;
+}
+#startup button {
+    border-radius: 4px;
+    padding: 9px 7px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+  margin-right: 10px;
+ 
+   
+}
+#startup #ram{
+    background-color: #e60578;
+    color: white;
+
+}
+
+#startup #rom{
+    border: 1px solid rgb(192, 192, 192);
+
+}
+#startup #ram:hover{
+    background-color: #90004d;
+}
+
+#vvs:hover {
+    background-color: #90004d;
+}
+
+
+#startup #rom:hover{
+    background-color: rgb(213, 213, 213);
+}
+#startup #rim{
+    border: none;
+    background-color: #1870eb00;
+    color: #e6007a;
+}
+#startup #rim:hover{
+    background-color: #e6007b82;
+}
+
+#king .ta{
+    width: 520px;
+}
+
+#footer , #foot{
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.112);
+    position: fixed;
+    left: 0;
+bottom: 0;
+}
+
+#foot{
+
+    width: 95%;
+    box-shadow: none;
+}
+
+#foot button{
+    width: 20%;
+    height: 100%;
+  border: none;
+  background-color: #376cb200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#foot button:hover{
+    border-top: 3px solid grey;
+}
+
+#foot button:focus-within{
+    border-top: 3px solid #1871eb;
+}
+
+
+.footer{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(18,21,27);
+            
+        }
+        section{
+            display: flex;
+            height: fit-content;
+            justify-content: center;
+        }
+        .mom img{
+            margin-bottom: 20px;
+        }
+        .mom a{
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        .mom a:hover{
+            text-decoration: underline;
+        }
+        .mom img{
+            width: 150px;
+        }
+        .kal{
+            margin-top: 40px;
+            width: 90%;
+            height: fit-content;
+            display: flex;
+            /* background-color: chartreuse; */
+            justify-content: space-between;
+            flex-wrap: wrap;
+           
+        }
+        .ter p{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: white;
+        }
+        .ter a{
+            font-family: 'Roboto', sans-serif;
+           text-decoration: none;
+           line-height: 25px;
+           color: white;
+           font-size: 14px;
+        }
+        .ter a:hover{
+            text-decoration: underline;
+        }
+        .klo h1{
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+        .bus{
+            width: 150px;
+            height: 40px;
+            background-color: rgb(18,21,27);
+            border: 1.5px solid white;
+            border-radius: 6px;
+            margin-top: 15px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bus h6{
+            font-weight: 400;
+            font-size: 8px;
+        }
+        .bus p{
+            margin-right: 15px;
+        }
+        .bus img{
+            width: 50px;
+        }
+        .icons{
+            width: 170px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .line{
+            width: 90%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.15);
+            margin-top: 60px;
+        }
+        .mine{
+            width: 100%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.15);
+            margin: 5px 0px;
+            display: none;
+        }
+        .sine{
+            width: 100%;
+            height: 1px;
+            display: none;
+            background-color: rgba(255, 255, 255, 0.15);
+           margin: 15px 0px 20px 0px; 
+        }
+        .geng{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            margin: 25px 0px 0px 90px;
+        }
+        .tep h1{
+            font-size: 17px;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+        }
+        .tep p{
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .pet p{
+            font-size: 11px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+        }
+        .kia{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .kia a{
+            margin-left: 10px;
+        }
+        .rr:hover{
+            color: blue;
+        }
+        .net p{
+            font-size: 15px;
+        }
+
+
+
+
+
+
+        /* media queries footer*/
+        @media (max-width : 1115px){
+          .kal{
+            width: 85%;
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+          .line{
+            width: 100%;
+          }
+          .geng{
+            width: 95%;
+            margin-left: 10px;
+            margin-bottom: 50px;
+          }
+          .mine, .sine{
+            display: none;
+          }
+        }
+
+           @media (max-width : 959px){
+            .footer{
+                width: 100%;
+                height: fit-content;
+            }
+            .kal{
+                flex-wrap: wrap;
+                height: fit-content;
+                margin-left: 15px;
+            }
+            .mom{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .geng{
+                width: 60%;
+                flex-wrap: wrap;
+                height: fit-content;
+                margin-bottom: 50px;
+            }
+            .pet{
+                width: 80%;
+                margin-top: 30px;
+                line-height: 20px;
+            }
+            .mine, .sine{
+                display: none;
+            }
+            
+        }
+
+        @media (max-width : 896px){
+            .footer{
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+            }
+            .kal{
+                width: 95%;
+            }
+            .mom{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .geng{
+                width: 65%;
+                flex-wrap: wrap;
+                height: fit-content;
+                margin-bottom: 50px;
+            }
+            .pet{
+                width: 75%;
+                margin-top: 30px;
+                line-height: 20px;
+            }
+            .mine, .sine{
+                display: none;
+            }
+        }
+
+        @media (max-width : 807px){
+            .footer{
+                width: 100%;
+                height: fit-content;
+            }
+            .kal{
+                width: 100%;
+                flex-wrap: wrap;
+                height: fit-content;
+            }
+            .mom{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .ter{
+                width: 18%;
+            }
+            .ter a{
+                font-size: 15px;
+            }
+            .geng{
+                width: 70%;
+                flex-wrap: wrap;
+                height: fit-content;
+                margin-bottom: 50px;
+            }
+            .pet{
+                width: 65%;
+                margin-top: 30px;
+                line-height: 20px;
+            }
+            .mine, .sine{
+                display: none;
+            }
+            
+        }
+
+        @media (max-width : 767px){
+            .footer{
+                width: 100%;
+                height: fit-content;
+            }
+            .kal{
+                width: 100%;
+                flex-wrap: wrap;
+                height: fit-content;
+            }
+            .kia{
+                width: 100%;
+                margin-top: 10px;
+            }
+            .klo{
+                width: 100%;
+            }
+            .mom{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .ter{
+                width: 100%;
+            }
+            .ter a{
+                font-size: 15px;
+            }
+           
+            .geng{
+                width: 70%;
+                margin-top: -4px;
+                flex-wrap: wrap;
+                height: fit-content;
+                margin-bottom: 50px;
+            }
+            .pet{
+                width: 100%;
+            }
+            .mine, .sine{
+                display: block;
+                width: 100%;
+            }
+            
+            .tep{
+                margin: 0;
+                display: none;
+            }
+            .love{
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .icons{
+                width: 80%;
+                margin-top: 30px;
+            }
+            
+        }
+
+        
+        @media (max-width : 570px){
+            .footer{
+                width: 100%;
+                height: fit-content;
+            }
+            .kal{
+                width: 100%;
+                flex-wrap: wrap;
+                height: fit-content;
+            }
+            .kia{
+                width: 100%;
+                margin-top: 10px;
+            }
+            .klo{
+                width: 100%;
+            }
+            .mom{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .ter{
+                width: 100%;
+            }
+            .ter a{
+                font-size: 15px;
+            }
+          
+            .geng{
+                width: 90%;
+                margin-top: -4px;
+                flex-wrap: wrap;
+                height: fit-content;
+                margin-bottom: 50px;
+            }
+            .pet{
+                font-size: 10px;
+            }
+            .mine, .sine{
+                display: block;
+                width: 100%;
+            }
+            
+            .tep{
+                margin: 0;
+                display: none;
+            }
+            .love{
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .icons{
+                width: 85%;
+                margin-top: 30px;
+            }
+            
+        }
+        @media (max-width : 496px){
+            .footer{
+                width: 100%;
+                height: fit-content;
+            }
+            .kal{
+                width: 100%;
+                flex-wrap: wrap;
+                height: fit-content;
+            }
+
+            .kia{
+                width: 100%;
+                margin-top: 10px;
+            }
+            .klo{
+                width: 100%;
+            }
+            .mom{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .ter{
+                width: 100%;
+            }
+            .ter a{
+                font-size: 15px;
+            }
+          
+            .geng{
+                width: 95%;
+                margin-top: -4px;
+                flex-wrap: wrap;
+                height: fit-content;
+                font-size: 10px;
+                margin-bottom: 50px;
+            }
+            .pet p{
+                font-size: 10px;
+            }
+            .mine, .sine{
+                display: block;
+                width: 100%;
+            }
+            
+            .tep{
+                margin: 0;
+                display: none;
+            }
+            .love{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .icons{
+                width: 100%;
+                margin-top: 30px;
+            }
+            section{
+                width: 100%;
+            }
+        }
+        
+
+        @media (max-width : 361px){
+            .footer{
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+            }
+            .kal{
+                width: 100%;
+                flex-wrap: wrap;
+                height: fit-content;
+            }
+    
+            .kia{
+                width: 90%;
+                margin-top: 10px;
+            }
+            .klo{
+                width: 100%;
+            }
+            .mom{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .ter{
+                width: 100%;
+            }
+            .ter a{
+                font-size: 15px;
+            }
+          
+            .geng{
+                width: 95%;
+                margin-top: -4px;
+                flex-wrap: wrap;
+                height: fit-content;
+                font-size: 10px;
+                margin-bottom: 50px;
+            }
+            .pet p{
+                font-size: 10px;
+            }
+            .mine, .sine{
+                display: block;
+                width: 100%;
+            }
+            
+            .tep{
+                margin: 0;
+                display: none;
+            }
+            .love{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .icons{
+                width: 100%;
+                margin-top: 30px;
+            }
+            section{
+                width: 100%;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries body */
+@media (max-width:1190px) {
+    #hold {
+        width: 98%;
+      
+    }
+    #onebar{
+    margin-right: 7px;
+   }
+
+#black{
+width: 100%;
+}
+
+#prof{
+    top: 40px;
+left: -200px;
+}
+    
+}
+
+@media (max-width:1024px) {
+    #kin , #king{
+        width: 100%;
+    }
+
+    #is{
+        width: 96%;
+    }
+   #kingg .tt{
+        display: none;
+    }
+
+    #con{
+        width: 750px;
+    }
+}
+
+@media (max-width:980px) {
+
+#vvs{
+  width: 90px;
+  font-size: 14px;
+}
+}
+
+@media (max-width:960px) {
+   #twobar #brs{
+    display: none;
+   }
+
+   #twobar{
+    width: 15%;
+   }
+
+   #threebar{
+    width: 45%;
+   }
+
+   #way{
+ position: relative;
+    left: -130px;
+   }
+
+   #onebar{
+    margin-right: 30px;
+   }
+    
+}
+
+
+@media (max-width:910px) {
+    #threebar{
+    width: 60%;
+    margin-right: 0;
+    
+   }
+
+   #smh , #pikin , #bub{
+    left: -300px;
+   }
+   #twobar{
+    width: 18%;
+   }
+   #con{
+        width: 750px;
+        height: 640px;
+        left: -130px;
+    }
+
+   #hold {
+    position: relative;
+   }
+   #way{
+ position: relative;
+ left: -120px;
+   }
+   #prof{
+    top: 39px;
+left: -225px;
+}
+
+}
+
+@media (max-width:844px) {
+   
+   #way{
+ position: relative;
+ left: -140px;
+   }
+   #onebar img{
+    margin-left: 10px;
+            width: 120px;
+            height: 30px;
+        }
+}
+
+
+@media (min-width: 805px) {
+    #king .ti{
+        display: none;
+    }
+     #footer{
+        display: none;
+     }
+
+     #papa .tr{
+        display: none;
+     }
+ 
+}
+
+@media (max-width: 805px) {
+
+    .footer{
+        display: none;
+    }
+
+    #smh , #pikin ,#bub {
+    left: -350px;
+   }
+
+   #quondo{
+    margin-top: 40px;
+   }
+
+  
+    #threebar span , #threebar p ,#twobar p {
+        display: none;
+    }
+
+#king {
+    padding-bottom: 100px;
+}
+
+#king .ta{
+    display: none;
+}
+#papa .ty{
+        display: none;
+     }
+
+#footer , #foot{
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.112);
+    position: fixed;
+    left: 0;
+bottom: 0;
+}
+    .accordion-container{
+        display: none;
+    }
+
+    #kin{
+        display: none;
+    }
+  
+
+    #king{
+        height: fit-content;
+    }
+
+    #threebar{
+    width: 100%;
+    margin-right: 0;
+    justify-content: end;
+}
+#blac{
+display: none;
+}
+
+#twobar{
+    display: none;
+}
+
+    #way{
+ position: static;
+ margin-right: 20px;
+    }
+ 
+    #threebar #way{
+        width: 33px;
+    height: 33px;
+        }
+
+        #threebar iconify-icon{
+            width: 33px;
+    height: 33px;
+        }
+
+        #wiz{
+            padding-top: 50px;
+        }
+
+ .way{
+   
+    display: block;
+ }
+ #onebar p{
+           display: none;
+        }
+
+
+
+}
+
+@media (max-width: 767px) {
+    #is{
+        width: 100%;
+    }
+    
+}
+@media (max-width: 550px) {
+    #smh , #pikin ,#bub {
+visibility: hidden;
+   }
+    
+}
+
+@media (max-width: 335px) {
+   
+ #onebar img{
+            display: none;
+        }
+    
+    
+}
+        </style>
+</head>
+<body>
+    <div id="container">
+      
+
+        <div class="accordion-container">
+            <div class="accordion-section">
+                <div class="accordion-header"> <div>  Messages   <p><img id="imgg" src="notification (3).png" alt=""> <button id="butt"> <img  src="up-arrow (1).png" alt=""> </button> </p></div></div>
+                <div class="accordion-content">  
+                    <div id="wonder">
+                        <!-- <div id="iwonder"> -->
+                        <div id="iwonder"> <p><input type="text" placeholder="Search"></p>  <iconify-icon id="iconn" icon="bytesize:options" width="30"></iconify-icon>    </div>
+                        <div id="wonn"> <b>Chat</b>                   <p>Requests</p>     </div>
+                        <div id="again">
+                            <img src="live-chat.svg" alt="">
+                            <b>  Welcome to your messages</b>
+                            <p>   Start connecting with others by <text>browsing</text> or  <text> posting a project </text> .  </p>
+                          
+
+
+                        </div>
+                    <!-- </div> -->
+                </div>
+            
+            </div>
+            </div>
+           
+        </div>
+
+        <div id="navbar">
+            <div id="hold">
+            <div id="onebar">
+         <img src="freelancer-logo.svg" alt="">
+         <p> <iconify-icon icon="iconamoon:arrow-left-2-duotone" width="23"></iconify-icon> <b> Profile </b>  </p>
+            </div>
+
+            <div id="twobar">
+
+                 <div id="drop"> 
+                <p id="p"> <img src="compass.png" alt=""> <span id="brs"> Browse</span> </p>
+                <div id="con">
+                    <div id="cont">
+                        <div id="conti">
+                            <div id="lay">
+                               <p> <input type="text" placeholder="Search Freelancer.com"> </p>  
+                            </div>
+                            <div id="relay">
+                               <b>Search</b>
+                               <div id="in">
+                                <div>
+                                    <p><iconify-icon icon="mingcute:folder-check-fill" style="color: #1871eb;" width="30"></iconify-icon> Projects</p>
+                                    <span>
+                                        Explore exciting new project opportunities now!
+                                    </span>
+
+                                </div>
+                                <div>
+                                    <p><iconify-icon icon="mingcute:folder-check-fill" style="color: #1871eb;" width="30"></iconify-icon> Projects</p>
+                                    <span>
+                                        Explore exciting new project opportunities now!
+                                    </span>
+
+                                </div>
+                                <div>
+                                    <p><iconify-icon icon="mingcute:folder-check-fill" style="color: #1871eb;" width="30"></iconify-icon> Projects</p>
+                                    <span>
+                                        Explore exciting new project opportunities now!
+                                    </span>
+
+                                </div>
+                                <div>
+                                    <p><iconify-icon icon="mingcute:folder-check-fill" style="color: #1871eb;" width="30"></iconify-icon> Projects</p>
+                                    <span>
+                                        Explore exciting new project opportunities now!
+                                    </span>
+
+                                </div>
+                                 
+                               </div>
+
+                            </div>
+                            <div id="relay">
+                                <b>Freelancing Tools</b>
+                                <div id="in">
+                                 <div>
+                                     <p><iconify-icon icon="mingcute:folder-check-fill" style="color: #1871eb;" width="30"></iconify-icon> Projects</p>
+                                     <span>
+                                         Explore exciting new project opportunities now!
+                                     </span>
+ 
+                                 </div>
+                                 <div>
+                                     <p><iconify-icon icon="mingcute:folder-check-fill" style="color: #1871eb;" width="30"></iconify-icon> Projects</p>
+                                     <span>
+                                         Explore exciting new project opportunities now!
+                                     </span>
+ 
+                                 </div>
+                                 <div>
+                                     <p><iconify-icon icon="mingcute:folder-check-fill" style="color: #1871eb;" width="30"></iconify-icon> Projects</p>
+                                     <span>
+                                         Explore exciting new project opportunities now!
+                                     </span>
+ 
+                                 </div>
+                                 <div>
+                                     <p><iconify-icon icon="mingcute:folder-check-fill" style="color: #1871eb;" width="30"></iconify-icon> Projects</p>
+                                     <span>
+                                         Explore exciting new project opportunities now!
+                                     </span>
+ 
+                                 </div>
+                                  
+                                </div>
+ 
+                             </div>
+                             <div id="relay">
+                                <b>Client tools</b>
+                                <div id="in">
+                                 <div>
+                                     <p><iconify-icon icon="mingcute:folder-check-fill" style="color: #1871eb;" width="30"></iconify-icon> Projects</p>
+                                     <span>
+                                         Explore exciting new project opportunities now!
+                                     </span>
+ 
+                                 </div>
+                                 <div>
+                                     <p><iconify-icon icon="mingcute:folder-check-fill" style="color: #1871eb;" width="30"></iconify-icon> Projects</p>
+                                     <span>
+                                         Explore exciting new project opportunities now!
+                                     </span>
+ 
+                                 </div>
+                                 <div>
+                                     <p><iconify-icon icon="mingcute:folder-check-fill" style="color: #1871eb;" width="30"></iconify-icon> Projects</p>
+                                     <span>
+                                         Explore exciting new project opportunities now!
+                                     </span>
+ 
+                                 </div>
+                                 <div>
+                                     <p><iconify-icon icon="mingcute:folder-check-fill" style="color: #1871eb;" width="30"></iconify-icon> Projects</p>
+                                     <span>
+                                         Explore exciting new project opportunities now!
+                                     </span>
+ 
+                                 </div>
+                                  
+                                </div>
+ 
+                             </div>
+                             <div id="relay">
+                                <b>Explore Freelancer</b>
+                                <div id="in">
+                                 <div>
+                                     <p><iconify-icon icon="mingcute:folder-check-fill" style="color: #1871eb;" width="30"></iconify-icon> Projects</p>
+                                     <span>
+                                         Explore exciting new project opportunities now!
+                                     </span>
+ 
+                                 </div>
+                                 <div>
+                                     <p><iconify-icon icon="mingcute:folder-check-fill" style="color: #1871eb;" width="30"></iconify-icon> Projects</p>
+                                     <span>
+                                         Explore exciting new project opportunities now!
+                                     </span>
+ 
+                                 </div>
+                                 <div>
+                                     <p><iconify-icon icon="mingcute:folder-check-fill" style="color: #1871eb;" width="30"></iconify-icon> Projects</p>
+                                     <span>
+                                         Explore exciting new project opportunities now!
+                                     </span>
+ 
+                                 </div>
+                                 <div>
+                                     <p><iconify-icon icon="mingcute:folder-check-fill" style="color: #1871eb;" width="30"></iconify-icon> Projects</p>
+                                     <span>
+                                         Explore exciting new project opportunities now!
+                                     </span>
+ 
+                                 </div>
+                                  
+                                </div>
+ 
+                             </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+                  <div id="parent">
+                <p id="p"> <img src="briefcase.png" alt="">  <span id="brs"> Manage </span> </p>
+                <div id="son">
+                    <div id="sonn">
+                        <div id="thesun">
+                            <div id="sow">
+                                <p> <b> Recent Projects</b> <span> View All </span>    </p>
+                                <div>
+                                    <p> You do not have any active projects. <br>
+                                          <a href=""> Create one </a>  to get started! </p>
+
+                                </div>
+                               
+
+                            </div>
+                            <div id="soww">
+                                <p> <b> Recent Projects</b> <span> View All </span>    </p>
+                                <div>
+                                    <p>  <iconify-icon icon="streamline:interface-favorite-heart-reward-social-rating-media-heart-it-like-favorite-love" style="color: #e60578;" width="14"></iconify-icon> <text>Favorites</text> </p>
+                                    <p>  <iconify-icon icon="mdi:briefcase-outline" width="14"></iconify-icon> <text> My Hires </text> </p>
+                                    <p>  <iconify-icon icon="fluent-mdl2:red-eye-12" width="16"></iconify-icon>  <text> Recently Viewed </text> </p>
+
+                                </div>
+                               
+
+                            </div>
+                            <div id="sowl">
+                                <p> <b>Tasklists</b> <span> View All </span>    </p>
+                    
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+                <p id="p"> <iconify-icon icon="ic:outline-group" style="color: black;" width="25"></iconify-icon>  <span id="brs"> Groups </span> </p>
+
+            </div>
+
+            <div id="threebar">
+                <a href="accanalytics.html"><img id="way" class="way" src="information (1).png" alt=""></a>
+                <div id="smooth">
+                <img id="way" src="notification (1).png" alt="">
+                <div id="smh">
+                    <div id="shh">
+                        <div id="sha">
+                           <b>  Notifications</b>
+                           <div>
+                            <img src="notification.svg" alt="">
+                               <p>
+                                You don't have any notifications as of this moment. <br>
+                                Would you like to search for a project instead? </p>
+                               <button class="btn "> Search Project</button>
+                           </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+                <div id="papa">
+                    <iconify-icon id="way" class="ty" icon="material-symbols:folder-open-outline" width="26"></iconify-icon>
+                    <iconify-icon id="way" class="tr" icon="material-symbols:folder-open-outline" width="35"></iconify-icon>
+                <div id="pikin">
+                    <div id="pic">
+                        <div id="rand">
+                            <button id="ree"> Recent Projects </button>
+                              <div id="dropdownnn">
+                            <button id="ree"> Saved Alerts  </button>
+                            <div id="dripp">
+                                <div id="dropp">
+                                    <div>
+                                        <img src="notification.svg" alt="">
+                                           <p>
+                                            Receive alerts for new projects based on your saved searches. Create one to start receiving notifications. </p>
+                                           <button class="btn btn-light"> Search Project</button>
+                                       </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+             <div id="setting">
+        <button id="free"> <iconify-icon icon="ic:round-settings" style="color: #1871eb;" width="25"></iconify-icon> </button>
+        <div id="set">
+            <div id="setup">
+                <div id="letgo">
+                   <p id="pree">  <iconify-icon icon="iconamoon:arrow-left-2-duotone" width="23"></iconify-icon>  <b> NOTIFICATION SETTINGS </b> </p>
+                </div>
+                <div id="ready">
+                    <b>Notifications </b>
+                    <p > Receive notifications from the Freelancer app. </p>
+                    
+                    <p id="you"> <iconify-icon icon="mingcute:toggle-left-fill" style="color: #b0b0b0;" width="36"></iconify-icon> <text> On this Device</text>   </p>
+
+                </div>
+                <div id="notred">
+                    <b>Saved Alerts</b>
+                    <div >
+                        <img src="notification.svg" alt="">
+                        <p>
+                            Receive alerts for new projects based on <br>  your saved searches. Create one to start <br> receiving notifications.</p>
+                            <button class="btn btn-light">Search Project</button>
+
+                    </div>
+
+                </div>
+                <div id="readdy">
+                    <b> My Skills </b>
+                    <p > Receive notifications for any new project tagged <br> under these category of skills. </p>
+                   
+                    <p id="you"> <iconify-icon icon="mingcute:toggle-right-fill" style="color: #1871eb;" width="36"></iconify-icon> <text> ChatGPT</text>   </p>
+                    <p id="you"> <iconify-icon icon="mingcute:toggle-right-fill" style="color: #1871eb;" width="36"></iconify-icon> <text> Digital Marketing</text>   </p>
+                    <p id="you"> <iconify-icon icon="mingcute:toggle-right-fill" style="color: #1871eb;" width="36"></iconify-icon> <text> 
+                        HTML</text>   </p>
+                    <p id="you"> <iconify-icon icon="mingcute:toggle-right-fill" style="color: #1871eb;" width="36"></iconify-icon> <text> HTML5</text>   </p>
+                    <p id="you"> <iconify-icon icon="mingcute:toggle-right-fill" style="color: #1871eb;" width="36"></iconify-icon> <text> JavaScript</text>   </p>
+                    <p id="you"> <iconify-icon icon="mingcute:toggle-right-fill" style="color: #1871eb;" width="36"></iconify-icon> <text> Node.js</text>   </p>
+                    <p id="you"> <iconify-icon icon="mingcute:toggle-right-fill" style="color: #1871eb;" width="36"></iconify-icon> <text> React.js</text>   </p>
+                    <p id="you"> <iconify-icon icon="mingcute:toggle-right-fill" style="color: #1871eb;" width="36"></iconify-icon> <text> Web Development</text>   </p>
+                    <p id="you"> <iconify-icon icon="mingcute:toggle-right-fill" style="color: #1871eb;" width="36"></iconify-icon> <text> Web Hosting</text>   </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+                        </div>
+                        <div id="rondo">
+                            <div id="quondo">
+                                <iconify-icon icon="carbon:folder-details" style="color: #1871eb; margin-left: 20px; margin-right: 10px;" width="32" ></iconify-icon>
+                                 <div>
+                                    <b>I want a custom product design website si...</b>
+                                    <p> eCommerce, HTML, PHP, Website Design, ... </p>
+                                    <p id="sabi">  <text>71,500 - 12,500 INR</text>  <text>4 minutes ago</text>   </p>
+
+                                </div>
+
+                            </div>
+                            <div id="quondo">
+                                <iconify-icon icon="carbon:folder-details" style="color: #1871eb; margin-left: 20px; margin-right: 10px;" width="32" ></iconify-icon>
+                                 <div>
+                                    <b>I want a custom product design website si...</b>
+                                    <p> eCommerce, HTML, PHP, Website Design, ... </p>
+                                    <p id="sabi">  <text>71,500 - 12,500 INR</text>  <text>4 minutes ago</text>   </p>
+
+                                </div>
+
+                            </div>
+                            <a href="notification.html" style="text-decoration: none; color: black; width: 100%; height: 100%;"  >   <div id="quondo">
+                                <iconify-icon icon="carbon:folder-details" style="color: #1871eb; margin-left: 20px; margin-right: 10px;" width="32"></iconify-icon>
+                                 <div>
+                                    <b>I want a custom product design website si...</b>
+                                    <p> eCommerce, HTML, PHP, Website Design, ... </p>
+                                    <p id="sabi">  <text>71,500 - 12,500 INR</text>  <text>4 minutes ago</text>   </p>
+
+                                </div>
+
+                            </div> </a>
+                            <a href="notification.html" style="text-decoration: none; color: black; width: 100%; height: 100%;"  >  <div id="quondo">
+                                <iconify-icon icon="carbon:folder-details" style="color: #1871eb; margin-left: 20px; margin-right: 10px;" width="32"></iconify-icon>
+                                 <div>
+                                    <b>I want a custom product design website si...</b>
+                                    <p> eCommerce, HTML, PHP, Website Design, ... </p>
+                                    <p id="sabi">  <text>71,500 - 12,500 INR</text>  <text>4 minutes ago</text>   </p>
+
+                                </div>
+
+                            </div> </a>
+                            <a href="notification.html" style="text-decoration: none; color: black; width: 100%; height: 100%;"  > <div id="quondo">
+                                <iconify-icon icon="carbon:folder-details" style="color: #1871eb; margin-left: 20px; margin-right: 10px;" width="32"></iconify-icon>
+                                 <div>
+                                    <b>I want a custom product design website si...</b>
+                                    <p> eCommerce, HTML, PHP, Website Design, ... </p>
+                                    <p id="sabi">  <text>71,500 - 12,500 INR</text>  <text>4 minutes ago</text>   </p>
+
+                                </div>
+
+                            </div> </a>
+                            <a href="notification.html" style="text-decoration: none; color: black; width: 100%; height: 100%;"  > <div id="quondo">
+                                <iconify-icon icon="carbon:folder-details" style="color: #1871eb; margin-left: 20px; margin-right: 10px;" width="32"></iconify-icon>
+                                 <div>
+                                    <b>I want a custom product design website si...</b>
+                                    <p> eCommerce, HTML, PHP, Website Design, ... </p>
+                                    <p id="sabi">  <text>71,500 - 12,500 INR</text>  <text>4 minutes ago</text>   </p>
+
+                                </div>
+
+                            </div> </a>
+                            <a href="notification.html" style="text-decoration: none; color: black; width: 100%; height: 100%;"  > <div id="quondo">
+                                <iconify-icon icon="carbon:folder-details" style="color: #1871eb; margin-left: 20px; margin-right: 10px;" width="32"></iconify-icon>
+                                 <div>
+                                    <b>I want a custom product design website si...</b>
+                                    <p> eCommerce, HTML, PHP, Website Design, ... </p>
+                                    <p id="sabi">  <text>71,500 - 12,500 INR</text>  <text>4 minutes ago</text>   </p>
+
+                                </div>
+
+                            </div> </a>
+                            <a href="notification.html" style="text-decoration: none; color: black; width: 100%; height: 100%;"  >  <div id="quondo">
+                                <iconify-icon icon="carbon:folder-details" style="color: #1871eb; margin-left: 20px; margin-right: 10px;" width="32"></iconify-icon>
+                                 <div>
+                                    <b>I want a custom product design website si...</b>
+                                    <p> eCommerce, HTML, PHP, Website Design, ... </p>
+                                    <p id="sabi">  <text>71,500 - 12,500 INR</text>  <text>4 minutes ago</text>   </p>
+
+                                </div>
+
+                            </div> </a>
+                            <a href="notification.html" style="text-decoration: none; color: black; width: 100%; height: 100%;"  >  <div id="quondo">
+                                <iconify-icon icon="carbon:folder-details" style="color: #1871eb; margin-left: 20px; margin-right: 10px;" width="32"></iconify-icon>
+                                 <div>
+                                    <b>I want a custom product design website si...</b>
+                                    <p> eCommerce, HTML, PHP, Website Design, ... </p>
+                                    <p id="sabi">  <text>71,500 - 12,500 INR</text>  <text>4 minutes ago</text>   </p>
+
+                                </div>
+
+                            </div> </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+                    <div id="chat">
+                <img id="way" src="chat-bubble.png" alt="">
+                <div id="bub">
+                    <div id="bubble">
+                        <p id="ppa"> <b >Recent messages</b>   <text id="work">View All</text></p>
+                        <div>
+                            <img src="live-chat.svg" alt="">
+                            <p>Start connecting with others by <text >  browsing </text> or  <text > posting a project</text>  .</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                </div>
+
+                <a href="notification.html" style="text-decoration: none;"> <span id="vvs"> Post a project </span> </a> 
+                <div id="pro">
+                <p id="cee"> <img src="c:\Users\USER\Desktop\MIssionary\WhatsApp Image 2023-11-15 at 04.56.29_4d310589.jpg" alt=""> <b>@MIBAH</b> <legend> $0.00 USD</legend> </p>
+                <div id="prof">
+                    <div id="profi">
+                        <div id="profil">
+                            <div id="profil1">
+                             <b>  Account </b>
+                             <a href="profile.html"  style="color: black; text-decoration: none;"> <text> View profile </text> </a>
+                             <text> Membership </text>
+                             <a href="accanalytics.html"  style="color: black; text-decoration: none;"> <text>Account analytics </text> </a>
+                             <text> Bid Insights</text>
+                             <text> Settings</text>
+                            </div>
+                            <div id="profil2">
+                                <b>Finances </b>
+                                <pre id="pass">Balance                   $0.00 USD</pre>
+                                <text>Add funds </text>
+                                <text>Withdraw funds </text>
+                                <text>Transaction history</text>
+                                <text>Financial dashboard</text>
+                                <text id="ball">Payment sharing </text>
+
+                                <text>Support </text>
+                                <text>Logout </text>
+                                <text id="tome"> App: b39adcd (1698223026 / 2023-10-25)</text>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </div>
+        <div id="blac">
+            <div id="black">
+                <div id="bones">
+                <p id="prove">  <b>Dashboard</b> </p>
+                <p><b>Lists </b></p>
+                <p id="sp"> <text>Tasklists <iconify-icon icon="radix-icons:dot-filled" style="color: #e6007a;" width="23"></iconify-icon></text> </p>
+                <p id="sp"> <text>My Projects</text> </p>
+                <p id="sp"> <text>Inbox</text>  </p>
+                <p id="sp"> <text>Feedback</text>  </p>
+                <p id="sp"> <text>Free Credit</text>  </p>
+            </div>
+
+
+            </div>
+
+        </div>
+        <div id="wiz">
+            <div id="is">
+                <div id="king">
+                    <div id="startup">
+                        <img src="default-notification-image.svg" alt="">  
+                        <div>
+                            <b>Welcome to Freelancer</b>
+                            <p> If you are new to our website, here are a few things to get you started!</p>
+                           <span> 3 days ago</span> 
+
+
+                        </div>
+
+                    </div>
+                    <div id="startup" class="ta">
+                        <legend> <img id="gt" src="search.png" alt="">  </legend> 
+                         <div>
+                             <p> <button id="ram"> Post a Project </button>  <button id="rom">Browse Projects</button>  <button id="rim">Set up account details</button></p>
+                         </div>
+
+
+
+                     </div>
+                
+                    <div id="startup" class="ti">
+                       <legend> <img id="gta" src="search.png" alt="">  </legend> 
+                        <div>
+                            <p> <b><a href="notification.html"  style="text-decoration: none; color: #1970eb;">Find work </a></b>  that interests you by browsing for projects or contests posted by clients.</p>
+                        </div>
+                    </div>
+
+                    <div id="startup" class="ti">
+                        <legend> <iconify-icon id="gta" icon="iconamoon:sign-plus" style="color:#49494b;" width="23"></iconify-icon>  </legend> 
+                         <div>
+                             <p> <b>Create a quote</b>  and send to your clients. Define the title, description, items and cost of your work.You can also  <b> <a href="postaproject.html" style="text-decoration: none; color: #1970eb;"> Post a project</a> </b>and start receiving bids from skilled freelancers within minutes.</p>
+                         </div>
+                     </div>
+                 <div id="startup" class="ti">
+                       <legend> <iconify-icon id="gta" icon="mdi:briefcase-outline" style="color: #49494b;" width="23"></iconify-icon>  </legend> 
+                        <div>
+                            <p><b> <a href="profile.html"  style="text-decoration: none; color: #1970eb;"> Manage </a> </b> your projects, contests, lists and tasks on the go in just a few steps.</p>
+                        </div>
+                    </div>
+                    <div id="startup" class="ti">
+                        <legend> <iconify-icon id="gta" icon="ph:chat" style="color: #49494b;" width="23"></iconify-icon>   </legend> 
+                         <div>
+                             <p>Chat and collaborate with your clients via <b>Messenger</b> .</p>
+                         </div>
+                     </div>
+                     <div id="startup" class="ti">
+                        <legend> <iconify-icon id="gta"  icon="streamline:interface-setting-menu-1-button-parallel-horizontal-lines-menu-navigation-three-hamburger" style="color: #49494b;" width="23"></iconify-icon>  </legend> 
+                         <div>
+                             <p>On the <b> Menu </b> page you can manage your accounts and withdraw funds from anywhere.</p>
+                         </div>
+                     </div>
+                     
+               
+                
+                   
+                </div>
+                <div id="kin">
+                    <div id="kingg">
+                        <p> <b>Set up your account</b>   <span>56% done</span>  </p>
+                        <p> <progress> </progress> </p>
+                        <p>Having a complete verified account will increase the chances of getting jobs.</p>
+                        <p><b>Complete your account setup by:</b></p>
+                        <div>
+                            <p id="cdf">  <legend> <iconify-icon icon="iconamoon:shield-yes-light" style="color: #626262;" width="23"></iconify-icon> <text>Add your phonenumber </text> </legend>  <span>+5%</span> </p>
+                        </div>
+                        <p id="line"> </p>
+                        <p>    <b>Balance</b>         <text id="textme"><iconify-icon icon="iconamoon:sign-plus-circle-light" style="color: #e6007a;" width="20"></iconify-icon> <b id="beee">Add funds</b></text> </p>
+                        <p>  <legend> <img src="" alt=""> <text>US Dollar </text> </legend>  <span> $0.00 USD</span>      </p>
+                        <p id="line"></p>
+                        <p class="tt"><b>Polls</b></p>
+                        <p class="tt"><b>What is your gender?</b></p>
+                        <p id="inn" class="tt"><input type="radio" name="yesorno"
+                            > <span> Male</span> </p>
+                        <p id="inn" class="tt"><input type="radio" name="yesorno"> <span>Female</span> </p>
+                        <p id="fnt" class="tt"> <button> Submit Answer </button> <button id="secbut">Skip Question </button></p>
+                     
+    
+    
+    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+           <div id="footer">
+            <div id="foot">
+                <button><iconify-icon icon="ic:outline-home" style="color: black;" width="27"></iconify-icon></button>  <button><iconify-icon icon="bx:search" style="color: black;" width="27"></iconify-icon></button>  <button><iconify-icon icon="mdi:briefcase-outline" style="color: #000;" width="27"></iconify-icon></button>  <button><iconify-icon icon="ic:outline-group" style="color: black;" width="27"></iconify-icon></button>  <button><iconify-icon icon="iconamoon:sign-plus" style="color:#000;" width="27"></iconify-icon></button> <button><iconify-icon icon="streamline:interface-setting-menu-1-button-parallel-horizontal-lines-menu-navigation-three-hamburger" style="color: #000;" width="23"></iconify-icon></button>
+
+            </div>
+
+           </div>
+
+           <div class="footer">
+            <section>
+                <div class="kal">
+                    <div class="mom">
+                        <img src="freelancer-logo-light.svg" alt="">
+                        <br>
+                        <section> <div class="mine"></div></section>
+                      <div class="kia">
+                        <iconify-icon icon="ion:globe-outline" style="color: white;" width="23"></iconify-icon>
+                        <a href="">US (International) / English</a> <br> <br>
+                      </div>
+                      <section> <div class="mine"></div></section>
+                      <div class="kia">
+                        <iconify-icon icon="heroicons:question-mark-circle-solid" style="color: white;" width="25"></iconify-icon>
+                        <a href=""> Help & Support</a> <br> <br>
+                      </div>
+                      <section> <div class="mine"></div></section>
+                      <div class="kia">
+                        <iconify-icon icon="ic:baseline-accessibility-new" style="color: white;" width="25"></iconify-icon>
+                        <a href="">Accessibility</a>
+                        <!-- <section> <div class="sine"></div></section> -->
+                      </div>
+                      <section> <div class="sine"></div></section>
+                    </div>
+        
+                    <div class="ter">
+        
+                        <p>Freelancer</p>
+                        <a href="">Categories</a> <br>
+                        <a href="">Projects</a><br>
+                        <a href="">Contests</a><br>
+                        <a href="">Freelancers</a><br>
+                        <a href="">Enterprise</a><br>
+                        <a href="">Membership</a><br>
+                        <a href="">Preferred Freelancer</a><br>
+                        <a href="">Program</a> <br>
+                        <a href="">Project Management</a><br>
+                        <a href="">Local Jobs</a><br>
+                        <a href="">Photo Anywhere</a><br>
+                        <a href="">Showcase</a><br>
+                        <a href="">API for Developers</a><br>
+                        <a href="">Get Verified</a><br>
+                        <a href="">Desktop App</a><br>
+                    </div>
+        
+                    
+                    <div class="ter">
+                      <section> <div class="sine"></div></section>
+                        <p>About</p>
+                        <a href="">About us</a> <br>
+                        <a href="">How it Works</a> <br>
+                        <a href="">Security</a> <br>
+                        <a href="">Investor</a> <br>
+                        <a href="">Sitemap</a> <br>
+                        <a href="">Stories</a> <br>
+                        <a href="">News</a> <br>
+                        <a href="">Team</a> <br>
+                        <a href="">Awards</a> <br>
+                        <a href="">Press Releases</a> <br>
+                        <a href="">Careers</a> <br>
+                    </div>
+        
+                    
+                    <div class="ter">
+                      <section> <div class="sine"></div></section>
+                      <p>Terms</p>
+                        <a href="">Privacy Policy</a> <br>
+                        <a href="">Terms and Conditions</a> <br>
+                        <a href="">Copyright Policy</a> <br>
+                        <a href="">Code of Conduct</a> <br>
+                        <a href="">Fees and Charges</a> <br>
+                    </div>
+            
+                    <div class="ter">
+                      <section> <div class="sine"></div></section>
+                       <p>Partners</p>
+                        <a href="">Escrow.com</a> <br>
+                        <a href="">Loadshift</a> <br>
+                        <a href="">Warrior Forum</a>
+                      </div>
+            
+                  <div class="klo">
+                    <section> <div class="sine"></div></section>
+                    <h1>Apps</h1>
+                        
+                  <div class="love">
+                    <div class="bus">
+                      <div><img src="apple-removebg-preview (1).png" alt=""></div>
+                  <div class="net">
+                      <h6>Available on the</h6>
+                      <p>App store</p>
+                  </div>
+                  </div>
+          
+                  <div class="bus">
+                  <div>
+                      <img src="download_1-removebg-preview (1).png" alt="">
+                  </div>
+          
+                  <div class="net">
+                      <h6>GET IT ON</h6>
+                    <p>Google Play</p>
+                  </div>
+                  </div>
+                  </div>
+            
+                    <div class="icons">
+                        <iconify-icon class="rr" icon="fluent-mdl2:facebook-logo" style="color: white;" width="22"></iconify-icon>
+                        <iconify-icon icon="mdi:twitter" style="color: white;" width="22"></iconify-icon>
+                        <iconify-icon icon="ri:youtube-fill" style="color: white;" width="22"></iconify-icon>
+                        <iconify-icon icon="cib:instagram" style="color: white;" width="22"></iconify-icon>
+                      </div>
+                  </div>
+                </div>
+                
+            </section>
+        
+           <section> <div class="line"></div></section>
+           
+          
+            <div class="geng">
+               <div class="tep">
+                <h1>69,557,725</h1>
+                <p> Registered Users</p>
+               </div>
+          
+               <div class="tep">
+                <h1>23,134,845</h1>
+                <p>Total Jobs Posted</p>
+               </div>
+        
+                <div class="pet">
+                <p>Freelancer ® is a registered Trademark of Freelancer Technology Pty Limited (ACN 142 189 759)
+                   <br> Copyright © 2023 Freelancer Technology Pty Limited (ACN 142 189 759)</p>
+               </div>
+            </div>
+
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionButton = document.querySelector('#butt')
+            const accordionContent = document.querySelector('.accordion-content')
+            const accordionHeader = document.querySelector('.accordion-header');
+
+        
+            accordionHeader.addEventListener('click', function () {
+                accordionContent.classList.toggle('active');
+
+                if ( accordionContent.classList.contains('active')) {
+                    accordionButton.innerHTML = ''
+                    accordionButton.innerHTML =  ` <img src="down-arrow (1).png" alt=""> `
+                } else {
+                    accordionButton.innerHTML =  ` <img src="up-arrow (1).png" alt=""> `
+                }
+            });  
+        })
+    </script>
+</body>
+
+</html>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

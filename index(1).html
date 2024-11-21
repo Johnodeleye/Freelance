@@ -1,0 +1,2192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="top.css">
+    <link rel="stylesheet" href="query.css">
+    <link rel="stylesheet" href="nest.css">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="image.css">
+
+   
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .slap h1{
+            margin-top: 50px;
+        }
+
+#itt{
+    position: relative;
+    z-index: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white ;
+            background-color: black;
+            margin-top: 80px;
+        }
+
+        #relit{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            width: 90%;
+            height: 100%;
+        }
+
+        #remit{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 600px;
+            height: 100%;
+        }
+
+     
+        #poppe ,#cringe{
+            position: relative;
+        }
+
+        #poppe span ,#cringe span{
+            height: 60px;
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 255, 255, 0);
+        }
+
+     #poper ,#frine{
+        
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    top: 60px;
+    border-radius: 3px;
+    align-items: start;
+    justify-content: center;
+      display: none;
+      padding-left: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247);
+    }
+    #poper button:hover , #frine button:hover {
+        color: #599aef;
+    }
+  
+
+    #poppe:hover #poper , #cringe:hover #frine{
+        display: flex;
+
+    }
+     
+     #crane , #grape , #maddo , #java , #mava , #rava , #cava , #nava ,#grope , #frane ,#gapa , #hapa ,#mara ,#wava ,#lava ,#liva , #nova ,#rova ,#mova ,#lova , #isova{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+     }
+
+     #grap , #maddona{
+        width: fit-content;
+        height: fit-content;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-left: 1px solid gray;
+     }
+
+    #maddona {
+        height: 100%;
+    }
+     #crane {
+        width: 140px;
+        height: 150px;
+     }
+
+     #frane{
+        width: 200px;
+        height: 110px;
+     }
+
+      #grape , #grope{
+        width: 300px;
+        height: fit-content;
+        background-color: white;
+        display: none;
+      }
+
+      #grope{
+        width: 330px;
+      }
+
+      #maddo , #java , #mava , #rava , #cava ,#nava ,#gapa ,#hapa , #mara , #wava ,#lava ,#liva , #nova ,#rova ,#mova , #lova , #isova{ 
+        width: 300px;
+        height: fit-content;
+        background-color: white;
+        display: none;
+       
+      }
+      #mava{
+        width: 320px;
+      }
+      #rava{
+        width: 370px;
+      }
+
+      #mova{
+        width: 320px;
+      }
+
+     #crane button ,#frane button{
+        border: none;
+        background-color: rgba(0, 255, 255, 0);
+        line-height: 30px;
+        width:100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+     }
+
+  
+
+  #grape button , #maddo button , #java button , #mava button , #rava button , #cava button ,#nava button ,#grope button ,#gapa button ,#hapa button ,#mara button , #wava button , #lava button ,#liva button , #nova button ,#rova button ,#mova button ,#lova button ,#isova button{
+    border: none;
+    background-color: rgba(0, 255, 255, 0);
+    line-height: 30px;
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+  }
+
+  #revel{
+    position: relative;
+    height: 60px;
+    background-color: rgba(165, 42, 42, 0);
+    display: flex;
+    align-items: center;
+  }
+
+#revel:hover #ngannou{
+    display: block;
+}
+#rtl{
+    margin-top: 20px;
+}
+
+#ngannou p:hover{
+color: #599aef;
+}
+
+  #ngannou{
+    width: 300px;
+    top: 60px;
+    display: none;
+    height: fit-content;
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding-left: 10px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.215);
+    line-height: 20px;
+  }
+
+ 
+
+
+
+  /* media queries */
+  @media (max-width:1190px) {
+    #relit{
+        width: 100%;
+    }
+  
+
+  }
+  @media (max-width:805px) {
+    #ngannou{
+    width: 220px;
+    left: -160px;
+  }
+
+  }
+
+  @media (max-width:505px) {
+  
+    #remit span{
+    font-size: 12px;
+  }
+  #ngannou{
+    width: 200px;
+  }
+
+
+  }
+
+       #sew{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0;
+    }
+
+    #ll{
+   
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    }
+    ul{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+     .juj{
+    width: 87%;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    }
+    .juj h1{
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    }
+    .fan{
+        margin-top: 20px;
+    }
+    .k1{
+        width: 35%;
+        padding: 14px 7px;
+        background-color: #e60278;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        border: 0;
+        border-radius: 4px;
+        font-weight: 500;  
+    }
+    .k2{
+        width: 60%;
+        padding: 14px 7px;
+        background: none;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        border: 1px solid white;
+        margin-left: 6px;
+        border-radius: 4px;
+        font-weight: 500;  
+      
+    }
+
+    .slap{
+        width: 46%;
+    }
+
+
+      /* media queries */
+  @media (max-width:1115px) {
+    .juj{
+        width: 95%;
+    }
+
+    .juj h1{
+        font-size: 38px;
+    }
+    .slap{
+        width: 42%;
+    }
+    .k1{
+        width: 40%;
+        font-size: 18px;
+    }
+    .k2{
+        width: 55%;
+        font-size: 18px;
+    }
+  
+
+  }
+
+  @media (max-width: 959px) {
+    .juj{
+        width: 95%;
+    }
+    .juj h1{
+        font-size: 45px;
+    }
+    .slap{
+        width: 54%;
+    }
+    .k1{
+        width: 40%;
+        font-size: 18px;
+    }
+    .k2{
+        width: 57%;
+        font-size: 18px;
+    }
+  
+  }
+  @media (max-width: 767px) {
+    .juj{
+        width: 95%;
+    }
+    .juj h1{
+        font-size: 42px;
+    }
+    .lol h1{
+        margin-top: 60px;
+    }
+  
+    .slap{
+        width: 100%;
+    }
+    .k1{
+        width: 100%;
+        font-size: 18px;
+        margin-top: 120px;
+    }
+    .k2{
+        width: 100%;
+        font-size: 18px;
+        margin: 0;
+        margin-top: 15px;
+    }
+  
+  }
+    </style>
+
+</head>
+<body>
+    <div class="nav">
+   <div class="naval">
+    <div class="navbar">
+        <img src="freelancer-logo.svg" alt="">
+        <a href="">How it Works</a>
+        <a href="">Browse Jobs</a>
+    </div>
+
+    <div class="navy">
+        <a href="login.html">Log In</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="postaproject.html"><button><b>Post a Project</b></button></a>
+    </div>
+   </div>
+    </div>
+    
+        <div id="itt">
+            <div id="relit">
+                <div id="remit">
+                    <div id="poppe">
+                    <span> Find jobs </span>
+                    <div id="poper">
+                        <div id="crane">
+                        <button id="r1"> By skill <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon>   </button>
+                        <button id="r2">  By language <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button>
+                        <button> Featured jobs</button>
+                        <button> Find contests</button>
+                    </div>
+                      <div id="grap">
+                    <div id="grape">
+                       <button id="s1">Find Graphic Design Jobs <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button> 
+                       <button id="s2">   Find Website Jobs <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button> 
+                       <button id="s3">  Find Mobile App Development Jobs <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button> 
+                       <button id="s4">  Find Software Development Jobs <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button> 
+                       <button id="s5"> Find Internet Marketing Jobs <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button> 
+                       <button>Find Data Entry Jobs</button> 
+                       <button> Find SEO Jobs</button> 
+                       <button id="s6">   Find Writing Jobs <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button> 
+                       <button> Find Legal Jobs</button> 
+                       <button>Find Finance Jobs</button> 
+                       <button>  Find Manufacturing Jobs</button> 
+                       <button>Find Logistics Jobs</button>
+                    </div>
+                    <div id="grope">
+                        <button>  Find Freelance Jobs In English</button>
+                        <button>  Find Freelance Jobs In Spanish</button>G
+                        <button> Find Freelance Jobs In Portugese</button>
+                        <button> Find Freelance Jobs In French</button>
+                        <button> Find Freelance Jobs In German</button>
+                        <button>  Find Freelancer Jobs in Other Languages</button>
+                      
+    
+    
+    
+    
+    
+    
+                    </div>
+                </div>
+    
+                     <div id="maddona">
+                    <div id="maddo"> 
+                        <button> Find Logo Design Jobs</button>
+                        <button> Find Web Design Jobs</button>
+                        <button> Find Banner Design Jobs</button>
+                        <button> Find 3D Modeling Jobs</button>
+                        <button>Find Photoshop Jobs</button>
+                        <button>Find Illustration Jobs</button>
+                        <button>Find 3D Animation Jobs</button>
+                        <button>Find 2D Animation Jobs</button>
+                        <button> Find Other Graphic Design Jobs</button>
+                    </div>
+    
+                    <div id="java">
+                       <button>Find PHP Jobs</button> 
+                       <button>Find Javascript Jobs</button> 
+                       <button>Find CSS Jobs</button> 
+                       <button>Find Amazon Web Services Jobs</button> 
+                       <button>Find HTML5 Jobs</button> 
+                       <button>Find Wordpress Jobs</button> 
+                       <button>Find Squarespace Jobs</button> 
+                       <button>Find Magento Jobs</button> 
+                       <button>Find Database Development Jobs</button> 
+                       <button> Find Other Website Jobs</button> 
+                    </div>
+                    <div id="mava">
+                        <button> Find iPhone App Jobs</button>
+                        <button> Find Android App Jobs</button>
+                        <button> Find Flutter Jobs</button>
+                        <button>Find Xamarin Jobs</button>
+                        <button> Find PhoneGap Jobs</button>
+                        <button> Find Other Mobile App Development Jobs</button>
+                    </div>
+    
+                    <div id="rava">
+                        <button>Find Linux Jobs</button>
+                        <button> Find C++ Software Development Jobs </button>
+                        <button> Find C# Software Development Jobs   </button>
+                        <button> Find Objective C Software Development Jobs </button>
+                        <button>Find Ruby On Rails Software Development Jobs</button>
+                        <button>Find Python Software Development Jobs</button>
+                        <button> Find Java Software Development Jobs </button>
+                        <button> Find Other Software Development Jobs</button>
+                    </div>
+                    <div id="cava">
+                        <button>Find Social Media Marketing Jobs</button>
+                        <button> Find Other Internet Marketing Jobs </button>
+                    </div>
+                    <div id="nava">
+                        <button> Find Copywriting Jobs</button>
+                        <button> Find Ghostwriting Jobs</button>
+                        <button> Find Article Writing Jobs</button>
+                        <button>Find Other Writing Jobs</button>
+                    </div>
+    
+                </div>
+    
+    
+                   
+    
+            
+                    </div>
+                </div>
+                <div id="cringe">
+                    <span> Hire Freelancers</span>
+                    <div id="frine">
+                        <div id="frane">
+                            <button id="r3"> By skills <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon>   </button>
+                            <button id="r4">  By location <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button>
+                            <button> Skills Cartegories</button>
+                        </div>
+                        <div id="grap"> 
+                            <div id="gapa">
+                          <button id="g1"> Hire Graphic Designers <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon></button> 
+                          <button>Hire Logo Designers </button>
+                          <button id="g2">Hire 3D Graphic Designers <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon></button>
+                          <button id="g3" > Hire Web Designers <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button>
+                          <button id="g4"> Hire Web Developers <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon></button>
+                          <button id="g5"> Hire Mobile App Developers <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon></button>
+                          <button id="g6"> Hire Writers <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button>
+                          <button id="g7">Hire Internet Marketing Specialists <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon></button>
+                          <button> Hire SEO Specialists</button>
+                          <button> Hire Data Entry Clerks</button>
+                          <button>Hire Virtual Assistants </button>
+                          <button id="g8">Hire Software Developers <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon></button>
+                          <button id="g9">  Hire Financial Experts <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon></button>
+                          <button>  Hire Translators</button>
+                          <button>Hire Lawyers </button>
+                          <button>Hire Manufacturers </button>
+                          <button> Hire Logistics Experts </button>
+                       </div>
+                       <div id="hapa">
+                        <button> Hire Freelancers in the United States</button>
+                        <button> Hire Freelancers in the United Kingdom</button>
+                        <button> Hire Freelancers in Canada </button>
+                        <button> Hire Freelancers in India </button>
+                        <button> Hire Freelancers in Australia</button>
+                        <button> Hire Freelancers in Pakistan </button>
+                        <button> Hire Freelancers in Bangladesh</button>
+                        <button> Hire Freelancers in Indonesia </button>
+                        <button> Hire Freelancers in Brazil </button>
+                        <button> Hire Freelancers in China </button>
+                        <button> Hire Freelancers in Turkey </button>
+                        <button> Hire Freelancers in the Philippines </button>
+                       </div>
+    
+    
+    
+                        </div>
+                        <div id="maddona">
+                            <div id="mara">
+                                <button>  Hire Photoshop Designers</button>
+                                <button> Hire Illustrators</button>
+                                <button> Hire Motion Graphics Designers</button>
+                                <button> Hire 2D Animators</button>
+                                <button>  Hire 3D Animators</button>
+                                <button> Hire Business Card Designers</button>
+                                <button> Hire Tattoo Designers</button>
+                                <button> Hire Stationery Designers </button>
+                                <button> Hire Packaging Designers </button>
+                                <button> Hire Fashion Designers</button>
+                                <button> Hire Brochure Designers</button>
+                                <button> Hire T-Shirt Designers </button>
+                                <button> Hire Other Graphic Designers</button>
+                            </div>
+                            <div id="wava">
+                                <button>  Hire 3D Modelers</button>
+                                <button> Hire 3D Renderers</button>
+                                <button> Hire Other 3D Graphic Designers</button>
+                            </div>
+                            <div id="lava">
+                                <button>   Hire Wordpress Web Designers </button>
+                                <button> Hire Squarespace Web Designers </button>
+                                <button> Hire Wix Web Designers</button>
+                                <button> Hire Shopify Web Designers</button>
+                                <button> Hire Magento Web Designers </button>
+                                <button> Hire Other Web Designers</button>
+                            </div>
+                            <div id="liva">
+                                <button>      Hire PHP Web Developers</button>
+                                <button> Hire HTML5 Web Developers</button>
+                                <button> Hire CSS Web Developers</button>
+                                <button> Hire Javascript Web Developers</button>
+                                <button> Hire Ruby on Rails Web Developers</button>
+                                <button> Hire node.js Web Developers</button>
+                                <button> Hire Angular.js Web Developers</button>
+                                <button> Hire React.js Web Developerss </button>
+                                <button> Hire Other Web Developers </button>
+                            </div>
+                            <div id="nova">
+                                <button> Hire iPhone Mobile App Developers </button>
+                                <button>Hire Android Mobile App Developers</button>
+                                <button> Hire PhoneGap Mobile App Developers</button>
+                                <button> Hire Flutter Mobile App Developers</button>
+                                <button> Hire Xamarin Mobile App Developers </button>
+                                <button> Hire Other Mobile App Developers</button>
+                            </div>
+                            <div id="rova">
+                                <button>   Hire Article Writers</button>
+                                <button>    Hire Copywriters</button>
+                                <button>  Hire Ghostwriters </button>
+                                <button>   Hire Other Writers</button>
+                            </div>
+                            <div id="mova">
+                                <button>  Hire Social Media Marketing Specialists</button>
+                                <button>  Hire Other Internet Marketing Specialists</button>   
+                            </div>
+                            <div id="lova">
+                                <button> Hire Java Software Developers </button>
+                                <button>Hire C++ Software Developers</button>
+                                <button> Hire Python Software Developers</button>
+                                <button> Hire Database Software Developers</button>
+                                <button> Hire Linux Software Developers</button>
+                                <button> Hire Objective C Software Developers</button>
+                                <button> Hire Other Software Developers</button>
+                            </div>
+                            <div id="isova">
+                                <button>Hire Spanish Translators</button>
+                                <button> Hire English Translators</button>
+                                <button> Hire Portuguese Translators</button>
+                                <button> Hire French Translators</button>
+                                <button> Hire German Translators</button>
+                                <button> Hire Other Translators</button>
+                            </div>
+                            
+                        </div>
+    
+                    </div>
+    
+                </div>
+                <div id="revel">
+                    <span> Get ideas </span>
+                    <div id="ngannou">
+                        <p id="rtl">Get Web Design Ideas</p>
+                        <p> Get Mobile App Ideas</p>
+                        <p> Get Graphic Design Ideas</p>
+                        <p> Get Logo Design Ideas</p>
+                        <p> Get 3D Modelling Ideas</p>
+                        <p> Get Illustration Ideas </p>
+                        <p> Get Branding Ideas </p>
+                        <p> Get Product Design Ideas </p>
+                        <p> Get Package Design Ideas </p>
+                        <p> Get Wordpress Ideas </p>
+                        
+                    </div>
+                </div>
+                <div id="revel">
+                    <span> About </span>
+                    <div id="ngannou">
+                        <p id="rtl"> Enterprise</p>
+                        <p> Membership</p>
+                        <p> Preferred Freelancer Program</p>
+                        <p> Get Verified</p>
+                    </div>
+                </div>
+                <div id="revel">
+                    <span> Resources </span>
+                    <div id="ngannou">
+                        <p id="rtl">   What Is Adobe Photoshop</p>
+                        <p>     What Is Android App Development</p>
+                        <p> What Is Article Writing</p>
+                        <p>  What Is Data Entry</p>
+                        <p> What Is Graphic Design</p>
+                        <p>  What is HTML</p>
+                        <p> What Is Internet Marketing</p>
+                        <p>  What Is iPhone App Development</p>
+                        <p>  What Is JavaScript</p>
+                        <p>  What Is Logo Design </p>
+                        <p>  What Is Mobile App Development</p>
+                        <p>  What Is PHP </p>
+                        <p>  What Is Python </p>
+                        <p> What Is Software Architecture </p>
+                        <p>  What Is Web Design</p>
+                        <p>  What Is WordPress   </p>           
+                    </div>
+                </div>
+                </div>
+    
+            </div>
+        </div>
+
+
+
+
+    <div id="sew" >
+        <video  id="ll" autoplay loop muted>
+            <source src="mobile-phone-v3.mp4">
+        </video>
+        <div class="juj">
+         
+           <div class="slap">
+            <h1>Hire the best freelancers for any job, online.</h1>
+            
+
+
+            <ul>
+                <li> World's largest freelance marketplace</li>
+                <li> Any job you can possibly think of</li>
+                <li> Save up to 90% & get quotes for free</li>
+                <li> Pay only when you're 100% happy</li>
+            </ul>
+
+
+         
+            <div class="fan" style="color: black;" >
+                <button class="k1">Hire a Freelancer</button>
+                <button class="k2">Earn Money Freelancing</button>
+            </div>
+        
+           </div>
+          
+         
+        
+        </div>
+
+
+        
+
+        </div>
+
+
+
+        
+    <div class="dell">
+        <section>
+            <div class="dik">
+                <div class="dep">
+
+
+                    
+                    <div class="femo">
+                                 
+                        <section><h1 id="g">As used by</h1></section>
+
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active w-100" data-bs-interval="10000">
+
+                                <div id="first">
+                                    <img src="amazon_logo2-darkmode.svg" alt="">
+                                    <img src="facebook-corporate-logo2-darkmode.svg" alt="">
+                                    <img src="deloitte-logo2-darkmode.svg" alt="">
+                                </div>
+
+                              </div>
+
+                              <div class="carousel-item w-100" data-bs-interval="2000">
+                                
+                                <div id="second">
+                                    <img src="nasa-logo3.svg" alt="">
+                                    <img src="ibm-logo2-darkmode.svg" alt="">
+                                    <img src="airbus-logo2-darkmode.svg" alt="">
+                                </div>
+                              
+                            </div>
+                              <div class="carousel-item w-100">
+                                
+                                <div id="third">
+                                    <img src="telstra-logo-darkmode.svg" alt="">
+                                    <img src="fujitsu-logo-darkmode.svg" alt="">
+                                    <img src="google-logo.svg" alt="">
+                                </div>
+                              
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+
+
+
+                    <div class="damo">
+
+                        <h1 id="h">As used by</h1>
+                        <img id="h" src="amazon_logo2-darkmode.svg" alt="">
+                        <img id="h" src="facebook-corporate-logo2-darkmode.svg" alt="">
+                        <img id="h" src="deloitte-logo2-darkmode.svg" alt="">
+                        <img id="h" src="nasa-logo3.svg" alt="">
+                        <img id="h" src="ibm-logo2-darkmode.svg" alt="">
+                        <img id="h" src="airbus-logo2-darkmode.svg" alt="">
+                        <img id="h" src="telstra-logo-darkmode.svg" alt="">
+                        <img id="h" src="fujitsu-logo-darkmode.svg" alt="">
+                        <img id="h" src="google-logo.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="xine"></div>
+        </section>
+
+        <section>
+            <div class="rat">
+                <div class="lol">
+                    <h1>Need something done?</h1>
+
+                    <div class="flex">
+
+                  <div class="dan">
+                    
+                    <div class="a">
+                        <h2>Post a job</h2>
+                        <p>It’s free and easy to post a job.  Simply fill in a title, description  and
+                            budget and competitive bids  come within minutes.</p>
+                    </div>
+
+                    <div class="a">
+                        <h2>Choose freelancers</h2>
+                        <p>No job is too big or too small.  We've got freelancers for jobs of  any size or
+                            budget, across 1800+  skills. No job is too complex. We  can get it done!</p>
+                    </div>
+                  </div>
+             
+
+                      
+                      <div class="dan">
+                        <div class="a">
+                            <h2>Pay safely</h2>
+                            <p>Only pay for work when it has  been completed and you're 100%  satisfied with the
+                                quality using our milestone payment system</p>
+                        </div>
+
+                        <div class="a">
+                            <h2>We’re here to help</h2>
+                            <p>
+                                Our talented team of recruiters  can help you find the best  freelancer for the
+                                job and our  technical co-pilots can even manage the project for you.
+                            </p>
+                        </div>
+                      </div>
+                 
+                    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="yine"></div>
+        </section>
+
+
+        <section>
+            <div class="rat">
+                <div class="lol">
+                    <h1>What's great about it?</h1>
+
+                    <div class="flex">
+                       
+                        <div class="dan">
+                            <div class="a">
+                                <h2>Browse portfolios</h2>
+                                <p>Find professionals you can trust  by browsing their samples of  previous work and
+                                    reading their  profile reviews.</p>
+                            </div>
+    
+                            <div class="a">
+                                <h2>Fast bids</h2>
+                                <p>Receive obligation free quotes  from our talented freelancers fast.  80% of
+                                    projects get bid on within  60 seconds.</p>
+                            </div>
+                        </div>
+
+                        <div class="dan">
+                            <div class="a">
+                                <h2>Quality work</h2>
+                                <p>Freelancer.com has by far the  largest pool of quality freelancers  globally-
+                                    over 60 million to choose  from.</p>
+                            </div>
+    
+                            <div class="a">
+                                <h2>Track progress</h2>
+                                <p>Keep up-to-date and on-the-go  with our time tracker, and mobile  app. Always
+                                    know what  freelancers are up to.
+                                </p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section>
+            <div class="yine"></div>
+        </section>
+
+        <section>
+            <div class="pat">
+                <div class="pol">
+                    <h1>Make it Real with Freelancer.</h1>
+                    <h5>Get some inspiration from 1800+ skills</h5>
+
+                   
+                </div>
+            </div>
+         
+        </section>
+        
+
+        <section>
+        
+                     <div class="kpk">
+                <div class="k">
+                                
+                    <img src="ai-generated-art-v2.webp" alt="">
+                <div class="hm">
+                    <div class="kon">
+                        <div class="dp">
+                            <h5><b>AI generated art.</b></h5>
+                            <h6>$200 USD in 7 days.</h6>
+                        </div>
+                        <button class="idi">Discover more<iconify-icon icon="fe:arrow-right"
+                                style="color: white;" width="14"></iconify-icon></button>
+                    </div>
+                </div>
+           
+            </div>
+             
+                <div class="bi">
+
+                    <div class="moon">
+                        
+                        <div class="egbe">
+                            <div class="w">
+                                
+                                    <img src="wordpress-website-v2.webp" alt="">
+                                <div class="hm">
+                                    <div class="kon">
+                                        <div class="dp">
+                                            <h5>Wordpress website.</h5>
+                                            <h6>$125 USD in 1 day.</h6>
+                                        </div>
+                                        <button class="idi">Discover more<iconify-icon icon="fe:arrow-right"
+                                                style="color: white;" width="14"></iconify-icon></button>
+                                    </div>
+                                </div>
+                           
+                            </div>
+
+                            <div class="w">
+                                
+                                <img src="interior-3d-model-v2.webp" alt="">
+                            <div class="hm">
+                                <div class="kon">
+                                    <div class="dp">                                        
+                                       <h5>Interior 3D model.</h5>
+                                        <h6>$350 USD in 7 days.</h6>
+                                    </div>
+                                    <button class="idi">Discover more<iconify-icon icon="fe:arrow-right"
+                                            style="color: white;" width="14"></iconify-icon></button>
+                                </div>
+                            </div>
+                       
+                        </div>
+
+    
+                        </div>
+
+
+                        <div class="egbe">
+                            <div class="l">
+                                
+                                    <img src="packaging-design-v2.webp" alt="">
+                                <div class="hm">
+                                    <div class="kon">
+                                        <div class="dp">
+                                            
+
+                                            <h5>Packaging design.</h5>
+                                            <h6>$2500 USD in 30 days</h6>
+                                        </div>
+                                        <button class="idi">Discover more<iconify-icon icon="fe:arrow-right"
+                                                style="color: white;" width="14"></iconify-icon></button>
+                                    </div>
+                                </div>
+                           
+                            </div>
+
+                            <div class="l">
+                                
+                                <img src="mobile-app-v2.webp" alt="">
+                            <div class="hm">
+                                <div class="kob">
+                                    <div class="dp">
+                                        <h5>Mobile app.</h5>
+                                        <h6>$21000 USD in 60 days.</h6>
+                                    </div>
+                                    <button class="idi">Discover more<iconify-icon icon="fe:arrow-right"
+                                            style="color: white;" width="14"></iconify-icon></button>
+                                </div>
+                            </div>
+                       
+                        </div>
+
+    
+                        </div>
+
+                   
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        
+        <section>
+            <div class="opk">
+             
+                <div class="bi">
+
+                    <div class="moon">
+                        
+                        <div class="egbe">
+                            <div class="w">
+                                
+                                    <img src="product-3d-modelling-v2.webp" alt="">
+                                <div class="hm">
+                                    <div class="kon">
+                                        <div class="dp">
+                                            <h5>Product 3D modelling.</h5>
+                                            <h6>$430 USD in 3 weeks.</h6>
+                                        </div>
+                                        <button class="idi">Discover more<iconify-icon icon="fe:arrow-right"
+                                                style="color: white;" width="14"></iconify-icon></button>
+                                    </div>
+                                </div>
+                           
+                            </div>
+
+                            <div class="w">
+                                
+                                <img src="book-cover-design-v2.webp" alt="">
+                            <div class="hm">
+                                <div class="kon">
+                                    <div class="dp">                                        
+                                       <h5>Book cover design.</h5>
+                                        <h6> $25 USD in 3 days.</h6>
+                                       
+                                    </div>
+                                    <button class="idi">Discover more<iconify-icon icon="fe:arrow-right"
+                                            style="color: white;" width="14"></iconify-icon></button>
+                                </div>
+                            </div>
+                       
+                        </div>
+
+    
+                        </div>
+
+
+                        <div class="egbe">
+                            <div class="l">
+                                
+                                    <img src="album-cover-v2.webp" alt="">
+                                <div class="hm">
+                                    <div class="kon">
+                                        <div class="dp">
+                                            <h5>Album cover.</h5>
+                                            <h6>$110 USD in 9 days.</h6>
+                                        </div>
+                                        <button class="idi">Discover more<iconify-icon icon="fe:arrow-right"
+                                                style="color: white;" width="14"></iconify-icon></button>
+                                    </div>
+                                </div>
+                           
+                            </div>
+
+                            <div class="l">
+                                
+                                <img src="ai-generated-illustration-v2.webp" alt="">
+                            <div class="hm">
+                                <div class="kob">
+                                    <div class="dp">
+                                        <h5>AI generated illustration.</h5>
+                                        <h6>$12 USD in 6 days.</h6>
+                                    </div>
+                                    <button class="idi">Discover more<iconify-icon icon="fe:arrow-right"
+                                            style="color: white;" width="14"></iconify-icon></button>
+                                </div>
+                            </div>
+                       
+                        </div>
+
+    
+                        </div>
+
+                   
+
+                    </div>
+
+                </div>
+
+                <div class="k">
+                                
+                    <img src="character-illustration-v2.webp" alt="">
+                <div class="hm">
+                    <div class="kon">
+                        <div class="dp">
+                            
+                            <h5><b>Character illustration.</b></h5>
+                            <h6> $60 USD in 5 days..</h6>
+                        </div>
+                        <button class="idi">Discover more<iconify-icon icon="fe:arrow-right"
+                                style="color: white;" width="14"></iconify-icon></button>
+                    </div>
+                </div>
+           
+            </div>
+
+            </div>
+
+        </section>
+
+        <section>
+            <div class="ipk">
+
+                <div class="k">
+                                
+                    <img src="architectural-design-v2.webp" alt="">
+                <div class="hm">
+                    <div class="kon">
+                        <div class="dp">
+                            <h5><b>Architectural design.</b></h5>
+                            <h6>  $5000 USD in 30 days.</h6>
+                        </div>
+                        <button class="idi">Discover more<iconify-icon icon="fe:arrow-right"
+                                style="color: white;" width="14"></iconify-icon></button>
+                    </div>
+                </div>
+           
+            </div>
+             
+                <div class="bi">
+
+                    <div class="moon">
+                        
+                        <div class="egbe">
+                            <div class="w">
+                                
+                                    <img src="video-production-v2.webp" alt="">
+                                <div class="hm">
+                                    <div class="kon">
+                                        <div class="dp">
+                                            <h5>Video production.</h5>
+                                            <h6> $1960 USD in 30 days.</h6>
+                                        </div>
+                                        <button class="idi">Discover more<iconify-icon icon="fe:arrow-right"
+                                                style="color: white;" width="14"></iconify-icon></button>
+                                    </div>
+                                </div>
+                           
+                            </div>
+
+                            <div class="w">
+                                
+                                <img src="shopify-website-v2.webp" alt="">
+                            <div class="hm">
+                                <div class="kon">
+                                    <div class="dp">                                        
+                                       <h5>Shopify website.</h5>
+                                        <h6>$300 USD in 7 days</h6>
+                                    </div>
+                                    <button class="idi">Discover more<iconify-icon icon="fe:arrow-right"
+                                            style="color: white;" width="14"></iconify-icon></button>
+                                </div>
+                            </div>
+                       
+                        </div>
+
+    
+                        </div>
+
+
+                        <div class="egbe">
+                            <div class="l">
+                                
+                                    <img src="ai-generated-image-v2.webp" alt="">
+                                <div class="hm">
+                                    <div class="kon">
+                                        <div class="dp">
+                                            
+
+                                            <h5>AI generated image.</h5>
+                                            <h6>$200 USD in 8 days.</h6>
+                                        </div>
+                                        <button class="idi">Discover more<iconify-icon icon="fe:arrow-right"
+                                                style="color: white;" width="14"></iconify-icon></button>
+                                    </div>
+                                </div>
+                           
+                            </div>
+
+                            <div class="l">
+                                
+                                <img src="seo-expert-v2.webp" alt="">
+                            <div class="hm">
+                                <div class="kob">
+                                    <div class="dp">
+                                        <h5>SEO expert.</h5>
+                                        <h6>$100 USD in 3 days.</h6>
+                                    </div>
+                                    <button class="idi">Discover more<iconify-icon icon="fe:arrow-right"
+                                            style="color: white;" width="14"></iconify-icon></button>
+                                </div>
+                            </div>
+                       
+                        </div>
+
+    
+                        </div>
+
+                   
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+           <div class="link">
+           <a href="" class="fl">View More Projects <iconify-icon class="ff" icon="oi:arrow-top" style="color: rgb(230,2,120);" width="14" rotate="90deg"></iconify-icon></a>      
+           </div>                     
+        </section>
+
+        <section><div class="yine"></div></section>
+
+        <section>
+            <div class="zat">
+                <div class="zol">
+                    <div class="zip">
+                        <h1>Get work done in
+                        <span class="tt">over 2700</span>
+                        different
+                        categories </h1>
+                    </div>
+
+                    <div class="flez">
+                        <div class="z">
+                            <a href="">Website Design</a> <br>
+                            <a href="">Mobile Apps</a> <br>
+                            <a href="">Android Apps</a> <br>
+                            <a href="">iPhone Apps</a> <br>
+                            <a href="">Software Architecture</a> <br>
+                            <a href="">Graphic Design</a> <br>
+                            <a href="">Logo Design</a> <br>
+                            <a href="">Public Relations</a> <br>
+                            <a href="">Logistics</a> <br>
+                            <a href="">Proofreading</a> <br>
+                            <a href="">Translation</a> <br>
+                            <a href="">Research</a>
+                        </div>
+
+                        <div class="z">
+                            <a href="">Research Writing</a> <br>
+                            <a href="">Article Writing</a> <br>
+                            <a href="">Web Scraping</a> <br>
+                            <a href="">HTML</a> <br>
+                            <a href="">CSS</a> <br>
+                            <a href="">HTML 5</a> <br>
+                            <a href="">Javascript</a> <br>
+                            <a href="">Data Processing</a> <br>
+                            <a href="">Python</a> <br>
+                            <a href="">Wordpress</a> <br>
+                            <a href="">Web Search</a> <br>
+                            <a href="">Finance</a>
+                        </div>
+
+                        <div class="g">
+                            <a href="">Legal</a> <br>
+                            <a href="">Linux</a> <br>
+                            <a href="">Manufacturing</a> <br>
+                            <a href="">Data Entry</a> <br>
+                            <a href="">Content Writing</a> <br>
+                            <a href="">Marketing</a> <br>
+                            <a href="">Excel</a> <br>
+                            <a href="">Ghostwriting</a> <br>
+                            <a href="">Copywriting</a> <br>
+                            <a href="">Accounting</a> <br>
+                            <a href="">MySQL</a> <br>
+                            <a href="">C++ Programming</a>
+                        </div>
+
+                        <div class="g">
+                            <a href="">Banner Design</a> <br>
+                            <a href="">Illustration</a> <br>
+                            <a href="">Link Building</a> <br>
+                            <a href="">C# Programming</a> <br>
+                            <a href="">PHP</a> <br>
+                            <a href="">3D Modelling</a> <br>
+                            <a href="">Photoshop</a> <br>
+                            <a href="">Technical Writing</a> <br>
+                            <a href="">Blogging</a> <br>
+                            <a href="">Internet Marketing</a> <br>
+                            <a href="">eCommerce</a> <br>
+                            <a href="" class="fl">View more <iconify-icon class="ff" icon="oi:arrow-top"
+                                    style="color: white;" width="14" rotate="90deg"></iconify-icon></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="yine"></div>
+        </section>
+
+
+        <section>
+            <div class="pik">
+                <div class="pep">
+
+                    <div class="pemo">
+                                 
+                        <section><h1 id="h">As seen on</h1></section>
+
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+
+                                <div id="bak">
+                                    <img class="q" src="the-new-york-times-darkmode.svg" alt="">
+                                    <img class="u" src="cnbc-darkmode.svg" alt="">
+                                    <img class="q" src="wall-street-journal-darkmode.svg" alt="">
+                                </div>
+
+                              </div>
+                              <div class="carousel-item">
+
+                                <div id="bakk">
+                                    <img class="q" src="cnn-darkmode.svg" alt="">
+                                    <img class="q" src="bloomberg-darkmode.svg" alt="">
+                                    <img class="q" src="yahoo-finance-darkmode.svg" alt="">
+                                </div>
+
+                              </div>
+                              <div class="carousel-item">
+
+                                <div id="bakk">
+                                    <img class="q" src="business-insider-darkmode.svg" alt="">
+                                    <img class="q" src="forbes-darkmode.svg" alt="">
+                                </div>
+
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+
+                
+
+               
+
+                  
+
+                    <div class="pamo">
+                        <h1>As seen on</h1>
+                        <img class="q" src="the-new-york-times-darkmode.svg" alt="">
+                        <img class="u" src="cnbc-darkmode.svg" alt="">
+                        <img class="q" src="wall-street-journal-darkmode.svg" alt="">
+                        <img class="q" src="cnn-darkmode.svg" alt="">
+                        <img class="q" src="bloomberg-darkmode.svg" alt="">
+                        <img class="q" src="yahoo-finance-darkmode.svg" alt="">
+                        <img class="q" src="business-insider-darkmode.svg" alt="">
+                        <img class="q" src="forbes-darkmode.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="bfoot">
+        <div class="mko">
+    
+         
+            <div class="pupu">
+                <div class="poy">
+                    <h1>Power your organisation's
+                   <span class="gh"> competitive advantage</span>
+                    with Freelancer</h1>
+                 </div>
+            
+                 <div class="oy">
+                    <h4>Freelancer Enterprise</h4>
+                    <p>Company budget? Get more done for less. Use our workforce of millions to help
+                         your business achieve more.</p>
+                    <a href="" class="fl">View more <iconify-icon class="ff" icon="oi:arrow-top" style="color: white;" width="14" rotate="90deg"></iconify-icon></a>
+                 </div>
+            
+                 <div class="oy">
+                    <h4>Freelancer API</h4>
+                   <p>Millions of professionals on demand. Why hire people when you can simply 
+                     integrate our talented cloud workforce instead?</p>
+                    <a href="" class="fl">View more <iconify-icon class="ff" icon="oi:arrow-top" style="color: white;" width="14" rotate="90deg"></iconify-icon></a>
+                 </div>
+            </div>
+    
+        </div>
+    
+    
+        <div class="nko">
+                
+            <div class="popo">
+                <img src="lopp.jpg" alt="">
+                
+                <div class="upu">
+                    <div class="boy">
+                        <h1>Power your organisation's
+                       <span class="gg"> competitive advantage</span>
+                        with Freelancer</h1>
+                     </div>
+                
+                     <div class="coy">
+                        <h4>Freelancer Enterprise</h4>
+                        <p>Company budget? Get more done for less. Use our workforce of millions to help
+                             your business achieve more.</p>
+                        <a href="" class="fl">View more <iconify-icon class="ff" icon="oi:arrow-top" style="color: white;" width="14" rotate="90deg"></iconify-icon></a>
+                     </div>
+                
+                     <div class="coy">
+                        <h4>Freelancer API</h4>
+                       <p>Millions of professionals on demand. Why hire people when you can simply 
+                         integrate our talented cloud workforce instead?</p>
+                        <a href="" class="fl">View more <iconify-icon class="ff" icon="oi:arrow-top" style="color: white;" width="14" rotate="90deg"></iconify-icon></a>
+                     </div>
+                </div>
+            </div>
+    
+            </div>
+         </div>
+    
+    
+         
+
+         
+
+    
+    <div class="footer">
+
+        <div class="margin">
+          <section>
+            <div class="kal">
+                <div class="mom">
+                    <img src="freelancer-logo-light.svg" alt="">
+                    <br>
+                    <section> <div class="mine"></div></section>
+                  <div class="kia">
+                    <iconify-icon icon="ion:globe-outline" style="color: white;" width="23"></iconify-icon>
+                    <a href="">US (International) / English</a> <br> <br>
+                  </div>
+                  <section> <div class="mine"></div></section>
+                  <div class="kia">
+                    <iconify-icon icon="heroicons:question-mark-circle-solid" style="color: white;" width="25"></iconify-icon>
+                    <a href=""> Help & Support</a> <br> <br>
+                  </div>
+                  <section> <div class="mine"></div></section>
+                  <div class="kia">
+                    <iconify-icon icon="ic:baseline-accessibility-new" style="color: white;" width="25"></iconify-icon>
+                    <a href="">Accessibility</a>
+                    <!-- <section> <div class="sine"></div></section> -->
+                  </div>
+                  <section> <div class="sine"></div></section>
+                </div>
+    
+                <div class="ter">
+    
+                    <p>Freelancer</p>
+                    <a href="">Categories</a> <br>
+                    <a href="">Projects</a><br>
+                    <a href="">Contests</a><br>
+                    <a href="">Freelancers</a><br>
+                    <a href="">Enterprise</a><br>
+                    <a href="">Membership</a><br>
+                    <a href="">Preferred Freelancer</a><br>
+                    <a href="">Program</a> <br>
+                    <a href="">Project Management</a><br>
+                    <a href="">Local Jobs</a><br>
+                    <a href="">Photo Anywhere</a><br>
+                    <a href="">Showcase</a><br>
+                    <a href="">API for Developers</a><br>
+                    <a href="">Get Verified</a><br>
+                    <a href="">Desktop App</a><br>
+                </div>
+    
+                
+                <div class="ter">
+                  <section> <div class="sine"></div></section>
+                    <p>About</p>
+                    <a href="">About us</a> <br>
+                    <a href="">How it Works</a> <br>
+                    <a href="">Security</a> <br>
+                    <a href="">Investor</a> <br>
+                    <a href="">Sitemap</a> <br>
+                    <a href="">Stories</a> <br>
+                    <a href="">News</a> <br>
+                    <a href="">Team</a> <br>
+                    <a href="">Awards</a> <br>
+                    <a href="">Press Releases</a> <br>
+                    <a href="">Careers</a> <br>
+                </div>
+    
+                
+                <div class="ter">
+                  <section> <div class="sine"></div></section>
+                  <p>Terms</p>
+                    <a href="">Privacy Policy</a> <br>
+                    <a href="">Terms and Conditions</a> <br>
+                    <a href="">Copyright Policy</a> <br>
+                    <a href="">Code of Conduct</a> <br>
+                    <a href="">Fees and Charges</a> <br>
+                </div>
+        
+                <div class="ter">
+                  <section> <div class="sine"></div></section>
+                   <p>Partners</p>
+                    <a href="">Escrow.com</a> <br>
+                    <a href="">Loadshift</a> <br>
+                    <a href="">Warrior Forum</a>
+                  </div>
+        
+              <div class="klo">
+                <section> <div class="sine"></div></section>
+                <h1>Apps</h1>
+                    
+              <div class="love">
+                <div class="bus">
+                  <div><img src="apple-removebg-preview (1).png" alt=""></div>
+              <div class="net">
+                  <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h6>
+                  <p>App store</p>
+              </div>
+              </div>
+      
+              <div class="bus">
+              <div>
+                  <img src="download__1_-removebg-preview (1).png" alt="">
+              </div>
+      
+              <div class="net">
+                  <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h6>
+                <p>Google Play</p>
+              </div>
+              </div>
+              </div>
+        
+                <div class="icons">
+                    <iconify-icon class="rr" icon="fluent-mdl2:facebook-logo" style="color: white;" width="22"></iconify-icon>
+                    <iconify-icon icon="ri:youtube-fill" style="color: white;" width="22"></iconify-icon>
+                    <iconify-icon icon="ri:youtube-fill" style="color: white;" width="22"></iconify-icon>
+                    <iconify-icon icon="cib:instagram" style="color: white;" width="22"></iconify-icon>
+                  </div>
+              </div>
+            </div>
+            
+        </section>
+    
+       <section> <div class="line"></div></section>
+       
+      
+        <div class="geng">
+           <div class="tep">
+            <h1>69,557,725</h1>
+            <p> Registered Users</p>
+           </div>
+      
+           <div class="tep">
+            <h1>23,134,845</h1>
+            <p>Total Jobs Posted</p>
+           </div>
+    
+            <div class="pet">
+            <p>Freelancer ® is a registered Trademark of Freelancer Technology Pty Limited (ACN 142 189 759)
+               <br> Copyright © 2023 Freelancer Technology Pty Limited (ACN 142 189 759)</p>
+           </div>
+        </div>
+        </div>
+        
+
+
+    
+        <script>
+let rat = document.getElementById('sew')
+
+            let buttonOne = document.getElementById('r1')
+            let divOne = document.getElementById('grape')
+            let divTwo = document.getElementById('maddo')
+            let divThree = document.getElementById('java')
+            let buttonTwo = document.getElementById('s1')
+            let buttonThree = document.getElementById('s2')
+            let divFour = document.getElementById('mava')
+            let buttonFour = document.getElementById('s3')
+            let divFive = document.getElementById('rava')
+            let buttonFive = document.getElementById('s4')
+            let divSix = document.getElementById('cava')
+            let buttonSix = document.getElementById('s5')
+            let divSeven = document.getElementById('nava')
+            let buttonSeven = document.getElementById('s6')
+            let buttonOn = document.getElementById('r2')
+            let divOn = document.getElementById('grope')
+           
+    
+    
+    
+    buttonOne.addEventListener('mouseenter', ()=>{
+        divOne.style.display = 'flex'
+         divOn.style.display = 'none'
+     
+    
+    })
+    
+    buttonOn.addEventListener('mouseenter', ()=>{
+        divOne.style.display = 'none'
+        divOn.style.display = 'flex'
+    })
+    
+    
+    
+    buttonTwo.addEventListener('mouseover', ()=>{
+      
+        divTwo.style.display = 'flex'
+        divThree.style.display = 'none'
+        divFour.style.display = 'none'
+        divFive.style.display = 'none'
+        divSix.style.display = 'none'
+        divSeven.style.display = 'none'
+        divOn.style.display = 'none'
+        divOne.style.display = 'flex'
+     
+    
+    })
+    
+    
+    divTwo.addEventListener('mouseleave', ()=>{
+        divOne.style.display = 'none'
+         divTwo.style.display = 'none'
+         divThree.style.display = 'none'
+         divFour.style.display = 'none'
+         divFive.style.display = 'none'
+         divSix.style.display = 'none'
+         divSeven.style.display = 'none'
+         divOn.style.display = 'none'
+        
+           
+        })
+    
+        buttonThree.addEventListener('mouseover', ()=>{
+         
+        divThree.style.display = 'flex'
+        divFour.style.display = 'none'
+        divTwo.style.display = 'none'
+        divFive.style.display = 'none'
+        divSix.style.display = 'none'
+        divSeven.style.display = 'none'
+        divOn.style.display = 'none'
+        divOne.style.display = 'flex'
+     
+    
+    })
+    
+    
+    divThree.addEventListener('mouseleave', ()=>{
+        divOne.style.display = 'none'
+        divTwo.style.display = 'none'
+         divThree.style.display = 'none'
+         divFour.style.display = 'none'
+         divFive.style.display = 'none'
+         divSix.style.display = 'none'
+         divSeven.style.display = 'none'
+         divOn.style.display = 'none'
+        
+           
+        })
+    
+        buttonFour.addEventListener('mouseover', ()=>{  
+        divFour.style.display = 'flex'
+        divTwo.style.display = 'none'
+        divThree.style.display = 'none'
+        divFive.style.display = 'none'
+        divSix.style.display = 'none'
+        divSeven.style.display = 'none'
+        divOn.style.display = 'none'
+        divOne.style.display = 'flex'
+     
+    
+    })
+    
+    
+    divFour.addEventListener('mouseleave', ()=>{
+        divOne.style.display = 'none'
+        divTwo.style.display ='none'
+         divThree.style.display = 'none'
+         divFour.style.display = 'none'
+         divFive.style.display = 'none'
+         divSix.style.display = 'none'
+         divSeven.style.display = 'none'
+         divOn.style.display = 'none'
+        
+           
+        })
+    
+        buttonFive.addEventListener('mouseover', ()=>{
+        divFive.style.display = 'flex'
+        divTwo.style.display = 'none'
+        divThree.style.display = 'none'
+        divFour.style.display = 'none'
+        divSix.style.display = 'none'
+        divSeven.style.display = 'none'
+        divOn.style.display = 'none'
+        divOne.style.display = 'flex'
+         
+     
+    
+    })
+    
+    
+    divFive.addEventListener('mouseleave', ()=>{
+        divOne.style.display = 'none'
+        divTwo.style.display ='none'
+         divThree.style.display = 'none'
+         divFour.style.display = 'none'
+         divFive.style.display = 'none'
+         divSix.style.display = 'none'
+         divSeven.style.display = 'none'
+         divOn.style.display = 'none'
+        
+           
+        })
+    
+        buttonSix.addEventListener('mouseover', ()=>{
+        divSix.style.display = 'flex'
+        divTwo.style.display = 'none'
+        divThree.style.display = 'none'
+        divFour.style.display = 'none'
+        divFive.style.display = 'none'
+        divSeven.style.display = 'none'
+        divOn.style.display = 'none'
+        divOne.style.display = 'flex'
+         
+     
+    
+    })
+    
+    
+    divSix.addEventListener('mouseleave', ()=>{
+        divOne.style.display = 'none'
+        divTwo.style.display ='none'
+         divThree.style.display = 'none'
+         divFour.style.display = 'none'
+         divFive.style.display = 'none'
+         divSix.style.display = 'none'
+         divSeven.style.display = 'none'
+         divOn.style.display = 'none'
+        
+           
+        })
+    
+    
+        buttonSeven.addEventListener('mouseover', ()=>{
+        divSeven.style.display = 'flex'
+        divTwo.style.display = 'none'
+        divThree.style.display = 'none'
+        divFour.style.display = 'none'
+        divFive.style.display = 'none'
+        divSix.style.display = 'none'
+        divOn.style.display = 'none'
+        divOne.style.display = 'flex'
+         
+     
+    
+    })
+    
+    
+    divSeven.addEventListener('mouseleave', ()=>{
+        divOne.style.display = 'none'
+        divTwo.style.display ='none'
+         divThree.style.display = 'none'
+         divFour.style.display = 'none'
+         divFive.style.display = 'none'
+         divSix.style.display = 'none'
+         divSeven.style.display = 'none'
+         divOn.style.display = 'none'
+        
+           
+        })
+    
+        let buttonOn1 = document.getElementById('r3')
+            let divOn1 = document.getElementById('gapa')
+            let buttonOn2 = document.getElementById('r4')
+            let divOn2 = document.getElementById('hapa')
+            let buttonOn3 = document.getElementById('g1')
+            let divOn3 = document.getElementById('mara')
+            let buttonOn4 = document.getElementById('g2')
+            let divOn4 = document.getElementById('wava')
+            let buttonOn5 = document.getElementById('g3')
+            let divOn5 = document.getElementById('lava')
+            let buttonOn6 = document.getElementById('g4')
+            let divOn6 = document.getElementById('liva')
+            let buttonOn7 = document.getElementById('g5')
+            let divOn7 = document.getElementById('nova')
+            let buttonOn8 = document.getElementById('g6')
+            let divOn8 = document.getElementById('rova')
+            let buttonOn9 = document.getElementById('g7')
+            let divOn9 = document.getElementById('mova')
+            let buttonOn10 = document.getElementById('g8')
+            let divOn10 = document.getElementById('lova')
+            let buttonOn11 = document.getElementById('g9')
+            let divOn11 = document.getElementById('isova')
+    
+    
+    buttonOn1.addEventListener('mouseenter', ()=>{
+        divOn1.style.display = 'flex'
+        divOn2.style.display = 'none'
+       
+     
+    
+     
+    
+    })
+    
+    buttonOn2.addEventListener('mouseenter', ()=>{
+        divOn1.style.display = 'none'
+        divOn2.style.display = 'flex'
+      
+    })
+    
+    rat.addEventListener('mouseenter', ()=>{
+         divOne.style.display = 'none'
+         divTwo.style.display = 'none'
+         divThree.style.display = 'none'
+         divFour.style.display = 'none'
+         divFive.style.display = 'none'
+         divSix.style.display = 'none'
+         divSeven.style.display = 'none'
+          divOn.style.display = 'none'
+        divOn1.style.display = 'none'
+        divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+    
+        
+           
+        })
+    
+    
+        buttonOn3.addEventListener('mouseover', ()=>{
+         
+         divOn3.style.display = 'flex'
+         divOn2.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+         divOn1.style.display = 'flex'
+      
+     
+     })
+     
+     
+     divOn3.addEventListener('mouseleave', ()=>{
+        divOn1.style.display = 'none'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+         
+            
+         })
+    
+         buttonOn4.addEventListener('mouseover', ()=>{
+         
+         divOn4.style.display = 'flex'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+         divOn1.style.display = 'flex'
+      
+     
+     })
+     
+     
+     divOn4.addEventListener('mouseleave', ()=>{
+        divOn1.style.display = 'none'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+         
+            
+         })
+    
+         buttonOn5.addEventListener('mouseover', ()=>{
+         
+         divOn5.style.display = 'flex'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+         divOn1.style.display = 'flex'
+        
+      
+     
+     })
+     
+     
+     divOn5.addEventListener('mouseleave', ()=>{
+        divOn1.style.display = 'none'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+         
+            
+         })
+    
+    
+    
+         buttonOn6.addEventListener('mouseover', ()=>{
+         
+         divOn6.style.display = 'flex'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+         divOn1.style.display = 'flex'
+      
+     
+     })
+     
+     
+     divOn6.addEventListener('mouseleave', ()=>{
+        divOn1.style.display = 'none'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+         
+            
+         })
+         buttonOn7.addEventListener('mouseover', ()=>{
+         
+         divOn7.style.display = 'flex'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+         divOn1.style.display = 'flex'
+      
+     
+     })
+     
+     
+     divOn7.addEventListener('mouseleave', ()=>{
+        divOn1.style.display = 'none'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+        
+         })
+    
+         buttonOn8.addEventListener('mouseover', ()=>{
+         
+         divOn8.style.display = 'flex'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+         divOn1.style.display = 'flex'
+      
+     
+     })
+     
+     
+     divOn8.addEventListener('mouseleave', ()=>{
+        divOn1.style.display = 'none'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+        
+         })
+    
+         buttonOn9.addEventListener('mouseover', ()=>{
+         
+         divOn9.style.display = 'flex'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+         divOn1.style.display = 'flex'
+      
+     
+     })
+     
+     
+     divOn9.addEventListener('mouseleave', ()=>{
+        divOn1.style.display = 'none'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+        
+         })
+    
+         buttonOn10.addEventListener('mouseover', ()=>{
+         
+         divOn10.style.display = 'flex'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn11.style.display = 'none'
+         divOn1.style.display = 'flex'
+      
+     
+     })
+     
+     
+     divOn10.addEventListener('mouseleave', ()=>{
+        divOn1.style.display = 'none'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+        
+         })
+    
+         buttonOn11.addEventListener('mouseover', ()=>{
+         
+         divOn11.style.display = 'flex'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn1.style.display = 'flex'
+      
+     
+     })
+     
+     
+     divOn11.addEventListener('mouseleave', ()=>{
+        divOn1.style.display = 'none'
+         divOn2.style.display = 'none'
+         divOn3.style.display = 'none'
+         divOn4.style.display = 'none'
+         divOn5.style.display = 'none'
+         divOn6.style.display = 'none'
+         divOn7.style.display = 'none'
+         divOn8.style.display = 'none'
+         divOn9.style.display = 'none'
+         divOn10.style.display = 'none'
+         divOn11.style.display = 'none'
+        
+         })
+        </script>
+    
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

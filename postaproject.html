@@ -1,0 +1,227 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a project</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #first{
+         width: 100%;
+         height: 60vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           background: linear-gradient(to left , rgb(10,44,88) , rgb(15,35,64) , rgb(17,26,42) );
+        }
+
+        #first div{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+          
+           justify-content: space-between;
+           
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 51.5%;
+            position: relative;
+            top: 20px;
+      
+            height: 230px;
+        }
+
+        #first div img{
+          
+            width: 150px;
+            height: 80px;
+        }
+
+        #sec{
+            width: 100%;
+            height:70vh;
+            display: flex;
+           align-items: center;
+           justify-content: center;
+           
+
+         
+        }
+
+        #sec div{
+            width: 55%;
+            height: 100%;
+            border: 1px solid grey;
+            position: relative;
+            top: -90px;
+            display: flex;
+            justify-content: center;
+           flex-wrap: wrap;
+            background-color: white;
+            border-bottom: none;
+         
+        }
+
+        input{
+            border: none ;
+            border-bottom: 1px solid rgb(193, 193, 193);
+            width:  93%;
+            height: 55px;
+            /* padding-left: 20px; */
+            margin-top: 16px;
+            font-size: 20px;
+            font-weight: 600;
+            outline: none;
+
+        }
+        h1{
+           font-weight: 900;
+            font-size: 30px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            
+        }
+
+
+        #first div p{
+            line-height: 21px;
+            font-size: 15px;
+            color: whitesmoke;
+        }
+  #made {
+    width: 93%;
+    height: 60px;
+   
+    display: flex;
+    align-items: center;
+    margin-bottom: 375px;
+  }
+
+  .btn{
+    background-color: rgb(230,5,120);
+    margin-right: 20px ;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  #made b {
+   font-size: 15px;
+  }
+
+
+  /* #letscheck{
+    position: absolute;
+    width: 900px;
+    height: 100px;
+    background-color:white;
+    bottom: -80px;
+    opacity: 0.8;
+  } */
+
+
+  @media (max-width:560px) {
+   h1{
+        font-size: 16px;
+    }
+    #first div p{
+          
+            font-size: 12px;
+        
+        }
+    #sec div{
+        width: 300px;  
+    }
+
+    #first{
+        align-items: start;
+        
+
+    }
+    #first div{
+        text-align: center;
+     align-items: center;
+        margin-top: 70px;
+    }
+
+  }
+
+  @media (max-width:260px) {
+    #first div{
+        margin-top: 0px;
+    }
+
+    input , #made b{
+        font-size: 12px;
+    }
+
+.btn{
+    margin-right: 5px ;
+    font-size: 15px;
+  }
+    
+  }
+
+  @media (max-width:195px) {
+   #sec div{
+    top: 0px;
+   }
+
+   #first{
+    height: 65vh;
+   }
+  } 
+
+
+  
+    </style>
+ </head>
+ <body>
+    <div id="container">
+        <div id="first">
+               <div>
+                <img src="freelancer-logo-light.svg" alt="">
+                <h1> Tell us what you need done </h1>
+                <p> Contact skilled freelancers within minutes. View profiles, ratings, portfolios and chat with them. Pay the  freelancer only when you are 100% satisfied with their work.</p>
+                
+
+
+               </div>
+        </div>
+        <div id="sec">
+            <div>
+                <input type="text" id="input" placeholder="What do you need done?">
+                
+                <p id="made">
+                    <a href="dashboard.html"><button class="btn btn-danger p-2 pl-4 pr-4"> Next</button></a> <b>Press ENTER</b>
+                </p>
+
+              
+
+            </div>
+           
+ 
+
+        </div>
+
+    </div>
+    
+    <script>
+           let input = document.querySelector('#input')
+
+   
+
+input.addEventListener('focus', ()=> input.style.borderBottom = "2px solid rgb(24,113,235) " )  
+input.addEventListener('blur', ()=> input.style.borderBottom = "1px solid rgb(193, 193, 193) " )  
+
+
+
+
+    </script>
+ </body>
+ </html>

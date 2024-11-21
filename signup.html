@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+         }
+        #container {
+           display: flex;
+           align-items: start;
+           justify-content: center;
+           height: 100vh;
+           width: 100%;
+           background-color: rgb(247,248,249);
+        }
+
+        #contain , form{
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgb(255,255,255);
+            width: 380px;
+            height: 90% ;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.146);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        form{
+            width: 100%;
+            border: none;
+            box-shadow: none;
+        }
+
+        #a {display: inline-block;
+            width: 55%;
+            height: 55px;
+            margin-top: 20px;
+        }
+
+       
+
+        #b , #c , #g{
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        #c{
+           font-size: 19px;
+        }
+        #c img{
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+        }
+        #b{
+            font-size: 19px;
+            padding-bottom: 10px;
+        }
+     #c , #g{
+        background-color: rgb(65,103,178);
+        width: 85%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border-radius: 5px;
+     }
+
+     #g {
+        background-color: rgb(24,113,235);
+     }
+ #d {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+#d p , #h{
+    width: 43%;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.499);
+}
+
+#d span {
+    font-weight: 600;
+    font-size: 14px;
+
+}
+
+#e , #e input { 
+  
+   width: 85%;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+ 
+}
+
+#e input , #j input{
+    width: 95%;
+   height: 40px;
+   padding: 2px 15px;
+   outline: none;
+   border: 1px solid grey;
+   font-size: 15px;
+}
+
+#f{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 85%;
+    font-size: 14px; 
+    color: rgba(0, 0, 0, 0.696);
+
+}
+
+#f #p{
+    color: rgb(24,113,235) ;
+    text-decoration: underline;
+    
+}
+#h {
+    width: 85%;
+  
+   
+}
+
+#j{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+
+}
+
+#j input{
+    width: 35%;
+    height:40px ;
+   
+    border-radius: 5px;
+}
+
+        legend{
+            font-size: 14px;
+            width: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+          
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 14px ;
+            color: rgb(24,113,235);
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+        #g button{
+color: white;
+background-color: rgba(250, 235, 215, 0);
+font-size: 19px;
+font-weight: 600;
+border: none;
+width: 100%;
+height: 100%;
+        }
+
+        #ea button{
+            width: 14%;
+            height: 97%;
+            border: none;
+            background-color: white;
+            margin-right: 2px;
+        }
+
+        #ea button iconify-icon{
+            margin-top: 5px;
+        }
+
+        #ea{
+    border: 1px solid grey;
+    width: 85%;
+    height: 42.5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  
+}
+
+#ea input{
+    width: 85%;
+    height: 97%;
+    font-size: 15px;
+    padding-left: 10px;
+    border: none;
+    margin-left: 2px;
+    outline: none;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="contain">
+            <form action="" method="post">
+           <img id="a" src="freelancer-logo.svg" alt=""> 
+            <p id="b"> Sign Up</p>
+            <p id="c"> <img src="facebook (4).png" alt=""> Continue with Facebook</p> 
+            <div id="d">  <p> </p> <span>OR</span> <p> </p> </div>
+            <div id="j"> <input id="first" type="text" placeholder="First Name" required>  <input required id="sec" type="text" placeholder="Last Name">      </div>
+            <div id="e"> <input id="mail" type="text" placeholder="Email or Username" required> </div>
+            <div id="ea"> <input id="password" type="password" placeholder="Password" > 
+                <button type="button" id="but" onclick="rave()"> <iconify-icon icon="mdi:eye-off" style="color: #626262;" width="21"></iconify-icon> </button> </div>
+            <div id="f"> <p><input type="checkbox"> 
+                I agree to the Freelancer <a href="" id="p"> User Agreement </a> and  <a href="" id="p"> Privacy Policy </a>.</p>  </div>
+            <a href="login.html"><p id="g"> <button> Join Freelancer </button>   </p></a>
+
+            <p id="h"></p>
+
+            <legend> Already have an account? &nbsp;<a href="login.html"> Log in </a></legend>
+
+    
+
+
+        </form>
+        </div>
+        
+        
+
+    </div>
+    <script>
+        let input = document.querySelector('#mail')
+   let put = document.querySelector('#password')
+   let i =document.querySelector('#first')
+   let j = document.querySelector('#sec')
+
+   let input2 = document.getElementById('ea')
+ let button = document.getElementById('but')
+ let contain = document.getElementById('contain')
+
+
+ function rave() {
+ put.type == 'password' ? put.type = 'text' : put.type = 'password'
+ put.type == 'password'  ?  button.innerHTML = `<iconify-icon icon="mdi:eye-off" style="color: #626262;" width="21"></iconify-icon>` :  button.innerHTML = `<iconify-icon icon="ooui:eye" style="color: #626262;" width="21"></iconify-icon>`
+}
+
+
+
+
+   
+
+     input.addEventListener('focus', ()=> input.style.border = "1px solid rgb(24,113,235) " )  
+     input.addEventListener('blur', ()=> input.style.border = "1px solid grey " )  
+
+  
+   input2.addEventListener('click', ()=> input2.style.border = "1px solid rgb(24,113,235) ")  
+  input2.addEventListener('mouseleave', ()=> input2.style.border = "1px solid grey  " ) 
+
+
+   i.addEventListener('focus', ()=> i.style.border = "1px solid rgb(24,113,235) " )  
+     i.addEventListener('blur', ()=> i.style.border = "1px solid grey " )  
+
+
+     j.addEventListener('focus', ()=> j.style.border = "1px solid rgb(24,113,235) " )  
+     j.addEventListener('blur', ()=> j.style.border = "1px solid grey " )  
+
+   
+    </script>
+     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>

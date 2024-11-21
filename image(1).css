@@ -1,0 +1,369 @@
+.pat {
+    width: 87%;
+    margin: 90px 0px 40px 0px;
+}
+
+.pol {
+    width: 100%;
+    color: white;
+}
+
+.pol h1 {
+    font-size: 46px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.pol h5 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+        .kpk, .opk, .ipk{
+            width: 87%;
+            height: fit-content;
+            margin: 5px 0px 0px 0px;
+            display: flex;
+        }
+
+        .k{
+            width: 50%;
+            margin-left: 5px;
+            height: fit-content;
+
+        }
+        .k img{
+            width: 100%;
+        }
+        .k:hover{
+            transition: all 0.5s;
+            transform: scale(1.1);
+            z-index: 1;
+        
+        }
+        
+        .k:hover .kon {
+            display: flex;
+            z-index: 2;
+          
+        }
+
+        .kon, .kob{
+            background-color: white;
+            width: 100%;
+            padding: 10px 10px;
+            height: fit-content;
+            margin-top: -4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            display: none;
+            transition: all 1s;
+        }
+
+        .hm {
+            display: flex;
+            justify-content: center;
+        }
+
+        .idi {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dp h5 {
+            font-size: 12px;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 1px;
+        }
+
+        .dp h6 {
+            font-size: 13px;
+            font-weight: 400;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .kon button, .kob button{
+            width: 130px;
+            height: 30px;
+            background-color: rgb(230, 2, 120);
+            padding: 0px 10px;
+            color: white;
+            border: 0;
+            border-radius: 3px;
+            font-size: 13px;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .bi {
+            width: 50%;
+            height: fit-content;
+        }
+
+        .moon {
+            display: block;
+        }
+        
+        .egbe{
+            width: 100%;
+            display: flex;
+        }
+
+
+        .w, .l{
+            width: 50%;
+            margin-left: 5px;
+            height: fit-content;
+        }
+
+        .l{
+            margin-top: 5px;
+        }
+      
+
+        .w img, .l img{
+            width: 100%;
+        }
+
+        .w:hover{
+            transform: scale(1.1);
+            transition: all 0.5s;
+            z-index: 1;
+            
+        }
+        .l:hover{
+            transform: scale(1.1);
+            transition: all 0.5s;
+            z-index: 1;
+        }
+
+
+        .w:hover .mp {
+            display: block;
+            transform: scale(1.1);
+            
+        }
+
+        .w:hover .kon {
+            display: flex;
+            transition: all ease-in-out 0.5s;
+            z-index: 2;
+        }
+
+        .w:hover .kob {
+            display: block;
+        }
+        
+        .l:hover .mp {
+            display: block;
+            z-index: 2;
+        }
+
+        .l:hover .kon {
+            display: flex;
+            transition: all ease-in-out 0.5s;
+            z-index: 6;
+        }
+
+        .l:hover .kob {
+            display: block;
+            transition: all ease-in-out 0.5s;
+        }
+        .link{
+            margin: 100px 0px 0px 0px;
+        }
+        .link a{
+            color: rgb(230,2,120);;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .link a:hover{
+            text-decoration: underline;
+        }
+       
+
+        @media (max-width : 1115px){
+        
+        .pat {
+        width: 98%;
+        }
+
+.pol h1 {
+    font-size: 48px;
+}
+
+.pol h5 {
+    font-size: 20px;
+}
+
+           .kpk, .opk, .ipk{
+            width: 95%;
+           }
+           .bi{
+            height: fit-content;
+           }
+           .egbe{
+            margin: 0;
+           }
+           .w img, .l img{
+            width: 100%;
+        }
+        .k, .w, .l{
+            width: 50%;
+            height: fit-content;
+        }
+        .w, .l{
+            width: 50%;
+            height: fit-content;
+        }
+        
+        
+        .w:hover{
+            transform: scale(1.1);
+            transition: all 0.5s;
+            z-index: 1;
+            
+        }
+        .l:hover{
+            transform: scale(1.1);
+            transition: all 0.5s;
+            z-index: 1;
+        }
+
+
+        .w:hover .mp {
+            display: block;
+            transform: scale(1.1);
+            
+        }
+
+        .w:hover .kon {
+            display: block;
+            transition: all ease-in-out 0.5s;
+            z-index: 2;
+        }
+
+        .w:hover .kob {
+            display: block;
+        }
+        
+        .l:hover .mp {
+            display: block;
+            z-index: 2;
+        }
+
+        .l:hover .kon {
+            display: block;
+            transition: all ease-in-out 0.5s;
+            z-index: 6;
+        }
+
+        .l:hover .kob {
+            display: block;
+            transition: all ease-in-out 0.5s;
+        }
+        .pat{
+            width: 92%;
+        }
+          }
+
+          @media (max-width : 959px){
+
+    .pol h1 {
+    font-size: 32px;
+    }
+
+    .pol h5 {
+    font-size: 18px;
+    }
+        .kpk, .opk, .ipk{
+            width: 98%;
+           }
+            
+          .k:hover, .w:hover, .l:hover{
+            display: block;
+            transform: none;
+          }
+          .w:hover .mp {
+            display: none;
+            
+        }
+
+        .w:hover .kon, .k:hover .kon{
+            display: none;
+        }
+
+        .w:hover .kob {
+            display: none;
+        }
+        
+        .l:hover .mp {
+            display: none;
+            z-index: 2;
+        }
+
+        .l:hover .kon {
+            display: none;
+        }
+
+        .l:hover .kob {
+            display: none;
+        }
+          }
+
+          
+          @media (max-width : 767px){
+
+        .pol h1 {
+        font-size: 32px;
+        }
+
+        .pol h5 {
+        font-size: 18px;
+        }
+        .kpk{
+            display: block;
+        }
+        .opk, .ipk{
+            display: none;
+        }
+        .bi{
+            width: 100%;
+            display: flex;
+        }
+        .bi img{
+            width: 50%;
+        }
+        .egbe{
+            display: flex;
+        }
+        .moon{
+            width: 100%;
+            display: flex;
+        }
+        .w, .l{
+            width: 50%;
+            margin: 0;
+            margin-right: 5px;
+        }
+        .w img, .l img{
+            width: 100%;
+        }
+        .k{
+            width: 100%;
+            margin: 0;
+        }
+    
+      }
+
+

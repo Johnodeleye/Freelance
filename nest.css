@@ -1,0 +1,484 @@
+.dell {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(18, 21, 27);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+  
+}
+
+.dep {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+ 
+}
+
+.xine {
+    width: 87%;
+    height: 1px;
+    background-color: rgb(92, 111, 140);
+    margin-top: 150px;
+}
+.yine{
+  
+        width: 87%;
+        height: 1px;
+        background-color: rgb(92, 111, 140);
+        margin-top: 90px;
+
+}
+
+.dik {
+    width: 100%;
+    flex-wrap: wrap;
+    color: white;
+    margin: 25px 0px 0px 0px;
+    position: absolute;
+}
+
+.dep {
+    display: flex;
+    justify-content: center;
+}
+
+.dep h1 {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dep p {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.det p {
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.damo, .femo{
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.femo{
+    display: none;
+}
+.flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.dan{
+    width: 48.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.damo h1{
+    margin-top: 5px;
+}
+
+.damo img, .femo img{
+    height: 40px;
+
+}
+
+
+.rat {
+    width: 87%;
+    margin: 90px 0px 0px 0px;
+    /* background-color: blueviolet; */
+}
+
+.lol {
+    width: 100%;
+    color: white;
+}
+
+.lol h1 {
+    font-size: 46px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.lol p {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    margin-top: 30PX;
+}
+
+
+
+
+.flex h2 {
+    font-size: 25px;
+    margin-top: 80px;
+}
+.a{
+    width: 47%;
+}
+.a p{
+    font-size: 34px;
+}
+
+.flex p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.zat{
+    width: 87%;
+    margin: 90px 0px 0px 0px;
+}
+.zip{
+    width: 30%;
+}
+.tt{
+    color: rgb(230,2,120);
+}
+.zol{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+
+.zol h1{
+    font-size: 46px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.flez{
+    width: 67%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 40px;
+
+}
+.z, .g{
+    width: 22%;
+
+}
+.flez a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 2.5;
+}
+.flez a:hover{
+    text-decoration: underline;
+    color: cyan;
+}
+.fl{
+    display: flex;
+    align-items: center;
+    color: rgb(230,2,120);
+}
+.fl a{
+    color: rgb(230,2,120);
+}
+.ff{
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.pep{
+    display: flex;
+    justify-content: space-between;
+}
+.pik{
+    width: 87%;
+    color: white;
+    margin: 65px 0px 65px 0px;
+}
+.pep{
+    display: flex;
+    justify-content: space-between;
+}
+.pep h1{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 30px;
+}
+.pamo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pemo{
+    display: none;
+}
+
+.u{
+    width: 90px;
+}
+
+
+#first, #second, #third{
+    width: 96vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+
+}
+
+#bak, #bakk, #bakkk{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+
+}
+#bak{
+    width: 85vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    margin-left: 40px;
+}
+
+#g{
+    display: none;
+}
+.carousel-inner{
+    display: none;
+}
+        
+        /* media query */
+        @media (max-width : 1115px){
+            .damo{
+                width: 98%;
+            }
+            .damo img{
+                height: 25px;
+            }
+            .yine, .xine{
+                width: 98%;
+            }
+            .dan{
+                width: 100%;
+                display: flex;
+            }
+            .rat{
+                width: 92%;
+            }
+            .u{
+                width: 75px;
+                
+            }
+            .q{
+                height: 15px;
+            }
+            .a{
+                width: 49%;
+            }
+            .a p{
+                font-size: 18.5px;
+            }
+            
+            .flex{
+                display: block;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .zip{
+                width: 32%;
+            }
+            .z{
+                width: 23%;
+            }
+            .zip h1{
+                margin-top: 20px;
+            }
+
+            .zat{
+                width: 92%;
+            }
+            .pik{
+                width: 92%;
+            }
+          }
+
+
+          @media (max-width : 959px){
+            
+            .a{
+                width: 100%;
+                margin-right: 150px;
+            }
+            section{
+                display: flex;
+            }
+            .damo h1, .pamo h1{
+                font-size: 12px;
+            }
+            .damo{
+                width: 98%;
+            }
+            .pamo{
+                width: 98%;
+            }
+          
+ 
+            .u{
+                width: 70px;
+                
+            }
+            .q{
+                height: 13px;
+            }
+            .lol h1{
+                font-size: 30px;
+            }
+            .a p{
+                font-size: 15px;
+            }
+            .dan{
+                width: 100%;
+                display: flex;
+                right: 0;
+            }
+            .flex{
+                flex-wrap: wrap;
+            }
+            .flex h2{
+                font-size: 20px;
+            }
+            .zol{
+                display: block;
+            }
+            .zip{
+                width: 90%;
+            }
+            .zip h1{
+                font-size: 50px;
+            }
+            .flez{
+                width: 100%;
+            }
+          
+          }
+
+          @media (max-width : 767px){
+            
+            
+            .a{
+                width: 100%;
+                margin-top: -50px;
+            }
+            .rat, .zat, .pat{
+                margin-top: 40px;
+            }
+           
+            .lol h1{
+                font-size: 25px;
+            }
+            .a p{
+                font-size: 15px;
+            }
+            .dan{
+                width: 100%;
+                display: block;
+            }
+            .yine{
+                width: 100%;
+            }
+            .line{
+                margin: 0;
+                display: block;
+            }
+            .xine{
+                margin-top: 120px;
+            }
+            
+            .flex{
+                flex-wrap: wrap;
+            }
+            .flex h2{
+                font-size: 20px;
+            }
+            .zip{
+                width: 100%;
+            }
+            .zip h1{
+                font-size: 42px;
+            }
+            .flez{
+                display: flex;
+                width: 90%;
+            }
+            .z{
+                width: 48%;
+            }
+            .g{
+               display: none; 
+            }
+            .damo{
+                display: none;
+            }
+            .femo{
+                width: 97%;
+                display: block;
+            }
+            .damo h1{
+                display: none;
+            }
+            .damo #h{
+                display: none;
+            }
+            #g{
+                display: block;
+            }
+            .pamo{
+                display: none;
+            }
+            .pemo{
+                width: 100%;
+                display: block;
+                justify-content: center;
+            }
+           
+            .u{
+                width: 60px;
+                
+            }
+            .q{
+                height: 16px;
+            }
+            .u{
+                width: 110px;
+            }
+
+            .carousel-inner{
+                display: flex;
+                align-items: center;
+            }
+          
+          }
